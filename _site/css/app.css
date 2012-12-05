@@ -1,4 +1,4 @@
-body { border-top: 10px solid black; }
+body { border-top: 10px solid black; font-family: 'Open Sans', san-serif; }
 a { color:#3d80a7; font-weight: bold; }
 a:hover: { color: #33576E; font-weight: bold; text-transform: underline; }
 h1 { margin-bottom: 10px; font-size: 32px; }
