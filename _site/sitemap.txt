@@ -1,10 +1,10 @@
 
-http://username.github.com/archive.html
-http://username.github.com/atom.xml
-http://username.github.com/categories.html
-http://username.github.com/index.html
-http://username.github.com/pages.html
-http://username.github.com/sitemap.txt
-http://username.github.com/tags.html
+http://aboutaaron.github.com/archive.html
+http://aboutaaron.github.com/atom.xml
+http://aboutaaron.github.com/categories.html
+http://aboutaaron.github.com/index.html
+http://aboutaaron.github.com/pages.html
+http://aboutaaron.github.com/sitemap.txt
+http://aboutaaron.github.com/tags.html
 
-http://username.github.com/lessons/2011/12/29/jekyll-introduction
+http://aboutaaron.github.com/hello-world
