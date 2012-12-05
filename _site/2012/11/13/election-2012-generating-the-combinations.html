@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title> aboutaaron | Election 2012: Electoral combinations </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+        <link href="/css/app.css" rel="stylesheet">
+        <link rel="shortcut icon" href="/img/favicon.ico">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <div class="container">
+        <div class="row">
+            <div id="small-logo"><a href="/"><img src="/img/upgrade.png"></a></div>
+            <div class="span9" id="content">
+                <article>
+    <header>
+        <h1>Election 2012: Electoral combinations</h1>
+        <p class="byline"> By <a href="mailto:">Christopher Groskopf</a> | November 13, 2012</p>
+        <div class="social">
+            <div class="fb-like" data-href="" data-send="false" data-layout="button_count" data-width="200" data-show-faces="false" data-font="segoe ui"></div>
+            <a href="https://twitter.com/share" class="twitter-share-button" data-via="nprapps">Tweet</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+        </div>
+    </header>
+    <section class="entry"><p><em>This is the first in a series of two (or more) blog posts about how we built the <a href='http://apps.npr.org/swing-state-scorecard/'>Swing State Scorecard</a> and our <a href='http://election2012.npr.org/'>Election 2012 results site</a>.</em></p>
+
+<h3 id='the_idea'>The idea</h3>
+
+<p>Early in the development of the Swing State Scorecard we determined that we wanted to tell a story about how many combinations (2-state, 3-state) of tossup states there are which would win the election for Obama or Romney (based on NPR projections). One idea that seemed compelling was to try to actually illustrate all the possible combinations of states that would win the election for each candidate. Doing so would, we speculated, demonstrate very clearly how important certain states (Florida) were to each candidate&#8217;s overall chance of winning the election. We had seen <a href='http://www.270towin.com/presidential_map/combinations.php?party=Republican&amp;num_rem=79&amp;st_remain=FL,PA,OH,NC,VA,CO,IA,NV,NH&amp;me=&amp;ne='>one other example</a> of this, but it was difficult to use and didn&#8217;t allow you to quickly compare the candidates.</p>
+
+<h3 id='building_it'>Building it</h3>
+
+<p>The one wrinkle to generating our &#8220;paths to victory&#8221; was that we weren&#8217;t actually sure we had the computational capacity to do it. Pre-rendering all the possible combinations would be a huge pain&#8212;the numbers quickly became unmanageable and an API would have been untenable on election night. The better option was to actually generate the combinations on the fly in Javascript, but we weren&#8217;t sure whether or not the average user&#8217;s computer would have the horsepower to do it.</p>
+
+<p>With these constraints in mind I set to work prototyping the algorithms that generate the combinations. Javascript lacks good library support for this sort of operation, but I was able to find many combination generating functions on Stack Overflow and elsewhere. The vast majority of these were recursive solutions, which immediately blew the <a href='http://www.nczonline.net/blog/2009/05/19/javascript-stack-overflow-error/'>call stack</a> in several of our target browsers. Fortunately, I found a <a href='http://stackoverflow.com/a/4061167'>very fast, non-recursive solution</a> developed by Stack Overflow user <a href='http://stackoverflow.com/users/449043/sid-m'>Sid_M</a>. I modified this very slightly and the final function is called in <a href='https://github.com/nprapps/electris/blob/master/www/js/app.js#L424'>combinations</a> in our codebase. To my surprise this method of generating combinations is very, very fast and works great even in IE. Of course, performance of the algorithm does degrade quickly with the number of tossup states, so we had to keep that number under thirteen in order for this method to work.</p>
+
+<h3 id='pruning_the_combinations'>Pruning the combinations</h3>
+
+<p>The resulting combinations still needed to be pruned down in order to be interesting. We filtered them in two ways. First (1), and most obviously, we only included ones that accumulated enough votes to form a winning combination. (This would probably have been faster if we pushed the logic down into the combinations algorithm, but I preferred to keep things well-factored.) Secondly (2), we removed any combination which was a superset of a previous combination. That is, if we already had the combination &#8220;Florida + Colorado&#8221;, then we discarded &#8220;Florida + Colorado + New Hampshire&#8221;. Fortunately the output of our combinations algorithm was sorted, so we were able to do all this pruning in a single iteration over the list.</p>
+
+<p>Here is the final code that generates and prunes the combinations for the Scorecard:</p>
+<script src='https://gist.github.com/3948223.js'> </script>
+<p>Obama&#8217;s lead in the polls shrank (or even reversed, depending on who you read) after we developed this approach, but we felt the illustration of the relative complexity of the paths to victory remained compelling. For <a href='http://election2012.npr.org'>election night</a> we refactored this this code into a &#8220;prediction mode&#8221; that would kick on automatically when we got down to the last twelve states.</p>
+<img src='/img/posts/election-night-prediction-mode.png' />
+<p>As it turns out the election was over so quickly many users probably never even noticed it, but had the ballot counting gone on into Wednesday it would have provided a ongoing way for users to interact with the results. Apparently, we weren&#8217;t the only ones with this in mind as the New York Times published a different view on the same information with their <a href='http://flowingdata.com/2012/11/05/all-possible-paths-to-the-white-house/'>Paths to the White House</a> app just before the election and updated automatically it throughout the night.</p></section>
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        var disqus_shortname = 'nprnewsappsblog';
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</article>
+            </div>
+            <div class="span3" id="rail">
+                <div id="logo"><a href="/"><img id="logo" src="/img/upgrade.png"></a></div>
+                <p class="nav-header">I'm Aaron Colby Williams I write code for fun, journalism and profit.</p>
+                <ul class="nav nav-list">
+                    <li><a href="/2012/11/21/weather-elections-roundup.html">Projects</a></li>
+                    <hr/>
+                    <li><a href="http://github.com/aboutaaron">Code</a></li>
+                    <hr/>
+                    <li><a href="/about/">About</a></li>
+                </ul>
+                <!-- <div class="twitter-widget">
+                    <a class="twitter-timeline" href="https://twitter.com/nprapps/npr-news-apps-team" data-widget-id="245228396911661058">Tweets from @nprapps/npr-news-apps-team</a>
+                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                </div> -->
+            </div>
+        </div>
+        <div class="row">
+            <div class="span12">
+                <footer>
+                    <p class="footer">Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a> | Directly inspired by <a href="https://github.com/nprapps/nprapps.github.com">NPR apps team blog</a> | Made with love in <span class="stateface stateface-replace stateface-ca">California</span></p>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'nprnewsappsblog'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function () {
+            var s = document.createElement('script'); s.async = true;
+            s.type = 'text/javascript';
+            s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+            (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+        }());
+    </script>
+
+    <!-- GOOGLE ANALYTICS -->
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-5828686-4']);
+        _gaq.push(['_trackPageview']);
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+
+    </body>
+</html>
