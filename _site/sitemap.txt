@@ -7,4 +7,4 @@ http://aboutaaron.github.com/pages.html
 http://aboutaaron.github.com/sitemap.txt
 http://aboutaaron.github.com/tags.html
 
-http://aboutaaron.github.com/jekyll-introduction
+http://aboutaaron.github.com/hello-world
