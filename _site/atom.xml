@@ -1,24 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
- 
- <title>about:aaron</title>
- <link href="http://aboutaaron.github.com/atom.xml" rel="self"/>
- <link href="http://aboutaaron.github.com"/>
- <updated>2012-12-05T01:25:38-08:00</updated>
- <id>http://aboutaaron.github.com</id>
- <author>
-   <name>Aaron Williams</name>
-   <email>aaron.colby.williams@gmail.com</email>
- </author>
+
+ <title>NPR News Apps Blog</title>
+ <link href="http://blog.apps.npr.org/atom.xml" rel="self"/>
+ <link href="http://blog.apps.npr.org/"/>
+ <updated>2012-12-05T12:09:31-08:00</updated>
+ <id>http://blog.apps.npr.org/</id>
 
  
  <entry>
    <title>Hello World</title>
-   <link href="http://aboutaaron.github.com/hello-world"/>
+   <link href="http://blog.apps.npr.org/2012/12/05/hello-world.html"/>
    <updated>2012-12-05T00:00:00-08:00</updated>
-   <id>http://aboutaaron.github.com/hello-world</id>
+   <id>http://blog.apps.npr.org/2012/12/05/hello-world</id>
    <content type="html"></content>
  </entry>
  
+ <entry>
+   <title>We're looking for teammates!</title>
+   <link href="http://blog.apps.npr.org/2012/12/04/we-are-looking-for-teammates.html"/>
+   <updated>2012-12-04T00:00:00-08:00</updated>
+   <id>http://blog.apps.npr.org/2012/12/04/we-are-looking-for-teammates</id>
+   <content type="html">&lt;p&gt;&lt;img alt='Elections are better with soup.' src='/img/posts/team-soup.jpg' /&gt;&lt;br /&gt; &lt;small&gt;Elections are better with soup. (&lt;a href='http://instagram.com/p/RnoKv_Jq6e/'&gt;Photo by Alyson Hurt&lt;/a&gt;)&lt;/small&gt;&lt;/p&gt;
+
+&lt;p&gt;Hey! Do you want to make the world a better place? Are you a designer or developer or designer-developer or ux-ui or hacker-journalist? (We love hyphens!) Well, have we got a job for you.&lt;/p&gt;
+
+&lt;p&gt;The news applications crew at NPR is looking for teammates. We work with news, music, and everybody else at NPR to dig through data, visualize information and build useful stuff for our audience.&lt;/p&gt;
+
+&lt;h3 id='requirements'&gt;Requirements&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;An understanding of the inner workings of the web&lt;/li&gt;
+
+&lt;li&gt;Attention to detail and love for making things&lt;/li&gt;
+
+&lt;li&gt;A genuine and friendly disposition&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id='bonus_points_to_folks_who'&gt;Bonus points to folks who&amp;#8230;&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Kick ass at statistics&lt;/li&gt;
+
+&lt;li&gt;Love information design&lt;/li&gt;
+
+&lt;li&gt;Know a thing or two about government data&lt;/li&gt;
+
+&lt;li&gt;Want to teach us stuff!!&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img alt='Beirut performing at the Tiny Desk.' src='/img/posts/beirut.jpg' /&gt;&lt;br /&gt; &lt;small&gt;Beirut performing at the Tiny Desk. (&lt;a href='http://www.flickr.com/photos/alykat/5830037351/'&gt;Photo by Alyson Hurt&lt;/a&gt;)&lt;/small&gt;&lt;/p&gt;
+
+&lt;h3 id='allow_me_to_persuade_you'&gt;Allow me to persuade you&lt;/h3&gt;
+
+&lt;p&gt;The newsroom is a crucible. We work on tight schedules with hard deadlines. That may sound stressful, but check this out: with every project we learn from our mistakes and refine our methods. It’s a fast-moving, volatile environment that will make you more awesome, every day. Job perks include&amp;#8230;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Live music at the Tiny Desk&lt;/li&gt;
+
+&lt;li&gt;All the tote bags you can eat&lt;/li&gt;
+
+&lt;li&gt;A sense of purpose&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Also, NPR is a really super place to work, and you&amp;#8217;ll make your mom proud.&lt;/p&gt;
+
+&lt;p&gt;Like what you&amp;#8217;re hearing? Take a look at &lt;a href='/2012/11/21/weather-elections-roundup.html'&gt;a few things we&amp;#8217;ve built&lt;/a&gt; and check out &lt;a href='http://github.com/nprapps'&gt;our code on GitHub&lt;/a&gt;. You&amp;#8217;ll be working at NPR&amp;#8217;s Washington, DC headquarters &amp;#8211; and we&amp;#8217;re moving to &lt;a href='http://www.popville.com/2012/08/future-home-of-npr-looking-really-good/'&gt;a beautiful new building&lt;/a&gt; soon!&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Interested? Email your info to &lt;a href='mailto:bboyer@npr.org'&gt;bboyer@npr.org&lt;/a&gt;! Thanks!&lt;/em&gt;&lt;/p&gt;</content>
+ </entry>
  
+
 </feed>
