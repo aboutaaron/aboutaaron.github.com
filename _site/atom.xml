@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
  
- <title>about:aaron</title>
- <link href="http://aboutaaron.github.com/atom.xml" rel="self"/>
- <link href="http://aboutaaron.github.com"/>
- <updated>2012-12-05T01:25:38-08:00</updated>
- <id>http://aboutaaron.github.com</id>
+ <title></title>
+ <link href="/atom.xml" rel="self"/>
+ <link href=""/>
+ <updated>2012-12-05T12:10:05-08:00</updated>
+ <id></id>
  <author>
-   <name>Aaron Williams</name>
-   <email>aaron.colby.williams@gmail.com</email>
+   <name></name>
+   <email></email>
  </author>
 
  
  <entry>
    <title>Hello World</title>
-   <link href="http://aboutaaron.github.com/hello-world"/>
+   <link href="/2012/12/05/hello-world.html"/>
    <updated>2012-12-05T00:00:00-08:00</updated>
-   <id>http://aboutaaron.github.com/hello-world</id>
+   <id>/2012/12/05/hello-world</id>
    <content type="html"></content>
  </entry>
  
