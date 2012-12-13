@@ -57,7 +57,7 @@
             </div>
             <div class="span3" id="rail">
                 <div id="logo"><a href="/"><img id="logo" src="/img/upgrade.png"></a></div>
-                <p class="nav-header">I'm Aaron Colby Williams I write code for fun, journalism and profit.</p>
+                <p class="nav-header">I'm Aaron Colby Williams and I write code for fun, journalism and profit.</p>
                 <ul class="nav nav-list">
                     <li><a href="/2012/11/21/weather-elections-roundup.html">Projects</a></li>
                     <hr/>
@@ -74,15 +74,23 @@
         <div class="row">
             <div class="span12">
                 <footer>
-                    <p class="footer">Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a> | Directly inspired by <a href="https://github.com/nprapps/nprapps.github.com">NPR apps team blog</a> | Made with love in <a href="http://www.youtube.com/watch?v=FWOsbGP5Ox4"><span class="stateface stateface-replace stateface-ca">California</span></a></p>
+                    <p class="footer">Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a> | Directly inspired by <a href="https://github.com/nprapps/nprapps.github.com">NPR apps team blog</a> | Made with love in <a href="http://www.youtube.com/watch?v=FWOsbGP5Ox4"><span class="stateface stateface-replace stateface-ca">California</span></a> | <a href="#" id="easter-egg">?</a></p>
                 </footer>
             </div>
         </div>
     </div>
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.box2d.min.js"></script>
 
     <script type="text/javascript">
+
+        // box2d
+        $(document).ready(function() {
+            $("#easter-egg").click(function() {
+                $("#logo").box2d({'y-velocity':5});
+            });
+          });
         /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
         var disqus_shortname = 'aboutaaron'; // required: replace example with your forum shortname
 
