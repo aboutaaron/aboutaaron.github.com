@@ -1,6 +1,4 @@
 body { border-top: 10px solid black; font-family: 'Open Sans', san-serif; }
-a { color:#3d80a7; font-weight: bold; }
-a:hover: { color: #33576E; font-weight: bold; text-transform: underline; }
 h1 { margin-bottom: 10px; font-size: 32px; }
 h2 { line-height:28px; margin-bottom: 10px; }
 h3 { margin-bottom: 10px; }
@@ -52,6 +50,8 @@ p.nav-header.a { text-transform: none; font-weight: normal; font-size: 12px; pad
 
 #disqus_thread { padding-top: 20px; }
 #small-logo { display:none; }
+
+#logo a:active { position: relative; top: 1px; }
 
 @media screen and (max-width:760px) {
     #small-logo { display: block; }
