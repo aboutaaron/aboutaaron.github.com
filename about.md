@@ -1,12 +1,8 @@
 ---
 layout: default
-title: Projects
+title: Page not found
 ---
 
-# Projects
-- One
-    How I built this
-- Two
-    How I built that.
-- Three
-    And some other thing.
+# About Aaron
+
+This is some explainer text and guess what? It's in Markdown. *Cool*
