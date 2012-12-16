@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title> aboutaaron | An 8 month look at becoming a web developer </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="Aaron Williams">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="/css/bootstrap.css" rel="stylesheet">
+        <link href="/css/app.css" rel="stylesheet">
+        <link rel="shortcut icon" href="/img/favicon.ico">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <div class="container">
+        <div class="row">
+            <div id="small-logo"><a href="/"><img src="/img/upgrade.png"></a></div>
+            <div class="span9" id="content">
+                <article>
+    <header>
+        <h1>An 8 month look at becoming a web developer</h1>
+        <p class="byline"> By <a href="mailto:aaron@aboutaaron.com">Aaron Williams</a> | March 10, 2012</p>
+        <div class="social">
+            <div class="fb-like" data-href="" data-send="false" data-layout="button_count" data-width="200" data-show-faces="false" data-font="segoe ui"></div>
+            <a href="https://twitter.com/share" class="twitter-share-button" data-via="nprapps">Tweet</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+        </div>
+    </header>
+    <section class="entry"><blockquote>"You definitely have the aptitude for it. You should learn to code."</blockquote>
+<p>These two sentences have controlled my personal and occupational activity for the last eight months.</p>
+
+<p>Back in May, I attended the <a href='http://nola11.nytimes-institute.com/'>New York Times Student Journalism Institute</a>, a two-week program where young journalists of color received training from Times Company journalists. <a href='http://twitter.com/#!/pilhofer'>Aron Pilhofer</a>, Interactive News Editor at the New York Times and co-founder of DocumentCloud, was my assigned editor.</p>
+
+<p>I asked him to teach me anything about web development and he kicked it off with this: <pre>$ bash -s stable &lt;</pre> That&#8217;s the bash script to install <a href='https://rvm.io/'>RVM</a>. It was daunting at first, but I felt like I was hacking the planet. He also made me change my terminal to the home-brew theme.</p>
+
+<p>Then it was Rails time. <pre>class ClientsController &lt; ApplicationController
+  def new
+  end
+end</pre> Watching him create web apps from the command line was one of the most enthralling things I had ever seen. It was like learning how to cast magic.</p>
+
+<p>Flying back home to San Francisco, I couldn&#8217;t get Pilhofer&#8217;s call to code out my head. I panicked because I was close to graduating from San Francisco State University with a degree in Journalism, but I realized I wanted to start computer programming. Every intro to computer science course at SF State required calculus prerequisites, which I didn&#8217;t have time to do. I had enough time to pick up a second minor and thought I could do web design and at least learn front-end basics. However, due to budget cuts, the design department removed the minor.</p>
+
+<p>I loved journalism, but I wanted to build tools to encourage and develop it. I wanted to be a news developer, but my department didn&#8217;t teach the skills I needed to become one. I thought about grad school, but that would be another two years of school without actually working in the real world, and an extra $50,000 to $80,000 in debt.</p>
+
+<p>I decided that if I wanted to learn these skills, I couldn&#8217;t wait on my school to catch up or hope that my master&#8217;s degree would teach them to me. So, I went to Amazon.com and purchased several books: <ul>
+	<li>XHTML and CSS fundamentals</li>
+	<li><a href='http://www.amazon.com/Calculus-Made-Silvanus-Phillips-Thompson/dp/1456531980/ref=sr_1_4?s=books&amp;ie=UTF8&amp;qid=1336668963&amp;sr=1-4'>Calculus Made Easy</a> by Silvanus Thompson (didn't end up finishing, but interesting nonetheless)</li>
+	<li><a href='http://pine.fm/LearnToProgram/'>Learn to Program</a> by Chris Pine (link to free e-book)</li>
+	<li><a href='http://www.amazon.com/Dont-Make-Me-Think-Usability/dp/0321344758/ref=sr_1_1?ie=UTF8&amp;qid=1336668918&amp;sr=8-1'>Don't Make Me Think</a> by Steve Krug</li>
+</ul> As the summer went on, I also ended up purchasing: <ul>
+	<li><a href='http://www.abookapart.com/products/responsive-web-design'>Responsive Web Design</a></li>
+	<li><a href='http://www.amazon.com/Learning-PHP-MySQL-JavaScript-Step-By-Step/dp/0596157134/ref=sr_1_1?s=books&amp;ie=UTF8&amp;qid=1336669021&amp;sr=1-1'>Learning PHP, MySQL, and JavaScript</a> by Robin Nixon</li>
+</ul> I went through Learn to Program first. I found the book pretty easy to follow, and though the math parts took some extra reading, I was able to traverse the book fairly quickly.</p>
+
+<p>As a result of that book, I made a quick program to calculate coffee doses for when I grind coffee in the morning. <pre>puts
+puts 'Welcome to Aaron\'s coffee dosage module'
+puts 'I will give you the amount of coffee you need'
+puts 'based on the amount of water you provide'
+puts
+puts '*REMEMBER* this is all in grams!'
+puts
+puts 'What amount of water are you using?'
+water = gets.chomp
+puts
+puts 'CALCULATING...'
+puts
+puts 'If you\'re using '+ water + 'g of water, you\'ll need'
+puts
+puts (water.to_i/10.9).to_s + 'g of coffee.'
+puts
+puts'Thank you for using my coffee calculator.'
+puts</pre> The code was rough, but I actually created something useful (I still use it). I haven&#8217;t created a program since this one, but it showed me the usefulness of programming. I put Learn to Program down and picked up XHTML and CSS fundamentals.</p>
+
+<p>The beauty of this book was that the author uses it to teach an intro web design course at the university she works at.</p>
+
+<p>As a result, the pacing, exercises and content were very easy to learn and, though a bit dated, taught me the difference between semantics and style.</p>
+
+<p>The result of this book was all the front-end work I did for <a href='http://goldengatexpress.org'>The Golden Gate Xpress</a>.</p>
+
+<p>Using Learn to Program and <a href='http://railscasts.com/'>RailsCast</a>, I wrote a scraper to print out the SF State Police crime log in the terminal: require &#8216;rubygems&#8217; require &#8216;nokogiri&#8217; require &#8216;open-uri&#8217;</p>
+
+<pre><code>url = &quot;http://www.sfsu.edu/~upd/crimelog/index.html&quot;
+doc = Nokogiri::HTML(open(url))
+puts doc.at_css(&quot;title&quot;).text
+doc.css(&quot;.brief&quot;).each do |brief|
+ puts brief.css(&quot;h3:nth-child(3) , p:nth-child(4), h3:nth-child(4), p:nth-child(5)&quot;).text
+end</code></pre>
+
+<p>Eight months later I&#8217;ve added plenty of skills to my repertoire: <ul>
+	<li>LessCSS</li>
+	<li>Git</li>
+	<li>jQuery</li>
+</ul> Now, almost a year later, I put most of these skills together to build the new corporate website for Tagged, Inc. (<a href='http://about.tagged.com'>about.tagged.com</a>)</p>
+
+<p>That site took some time (and a design team to help), but I&#8217;m really proud of what I accomplished.</p>
+
+<p>So, this is all to say that as long as you have the time, and the aptitude (which you should), you can definitely learn a thing or two about the web.</p>
+
+<p>Here&#8217;s to eight more months!</p></section>
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        var disqus_shortname = 'aboutaaron';
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</article>
+            </div>
+            <div class="span3" id="rail">
+                <a id="masthead" href="/">
+                    <img id="logo" src="/img/upgrade.png">
+                </a>
+                <p class="nav-header">I'm Aaron Colby Williams and I write code for fun, journalism and profit.</p>
+                <ul class="nav nav-list">
+                    <li><a href="/projects.html"><i class="icon-heart"></i> Projects</a></li>
+                    <hr/>
+                    <li><a href="http://github.com/aboutaaron"><i class="icon-github"></i> Code</a></li>
+                    <hr/>
+                    <li><a href="/about.html"><i class="icon-book"></i> About</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="span12">
+                <footer>
+                    <p class="footer">Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a> | Directly inspired by the <a href="https://github.com/nprapps/nprapps.github.com">NPR apps team blog</a> | Made with love in <a href="http://www.youtube.com/watch?v=FWOsbGP5Ox4"><span class="stateface stateface-replace stateface-ca">California</span></a> | <a title="Just how deep does the rabbit hole go?" href="#" id="easter-egg">?</a></p>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.box2d.min.js"></script>
+
+    <script type="text/javascript">
+
+        // box2d
+        $(document).ready(function() {
+            $("#easter-egg").click(function() {
+                $("#logo, i").box2d({'y-velocity':5});
+            });
+          });
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'aboutaaron'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function () {
+            var s = document.createElement('script'); s.async = true;
+            s.type = 'text/javascript';
+            s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+            (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+        }());
+    </script>
+
+    <!-- GOOGLE ANALYTICS -->
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-XXXXXXX-X']);
+        _gaq.push(['_trackPageview']);
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+
+    </body>
+</html>
