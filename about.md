@@ -14,14 +14,22 @@ My goal is to work at major media-driven company doing web development and progr
 ### Colophon
 
 This site is powered by the following technologies:
-- [Jekyll](http://jekyllrb.com/)
-- [Bootstrap](http://twitter.github.com/bootstrap)
-- [Font Awesome](http://fortawesome.github.com/Font-Awesome/)
-- [Github Pages](http://pages.github.com/)
+
+* [Jekyll](http://jekyllrb.com/)
+
+* [Bootstrap](http://twitter.github.com/bootstrap)
+
+* [Font Awesome](http://fortawesome.github.com/Font-Awesome/)
+
+* [Github Pages](http://pages.github.com/)
+
 
 #### Design
 This site's design is inspired by:
-- [The NPR Apps blog](http://blog.apps.npr.org/)
-- [The New York Times Debt Reckoning Feed](http://www.nytimes.com/interactive/us/politics/debt-reckoning.html)
-- [Sacha Greif](http://sachagreif.com/)
-- [Adobe Kuler](https://kuler.adobe.com/)
+* [The NPR Apps blog](http://blog.apps.npr.org/)
+
+* [The New York Times Debt Reckoning Feed](http://www.nytimes.com/interactive/us/politics/debt-reckoning.html)
+
+* [Sacha Greif](http://sachagreif.com/)
+
+* [Adobe Kuler](https://kuler.adobe.com/)
