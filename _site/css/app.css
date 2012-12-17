@@ -162,6 +162,10 @@ blockquote p {
   line-height: 28px;
   text-align: center;
 }
+.nav-list li a:hover {
+  color: #09324c;
+  background: none;
+}
 .nav-list #social-icons a {
   display: inline-block;
   padding: 3px 33px;
