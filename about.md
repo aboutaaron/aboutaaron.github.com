@@ -23,6 +23,8 @@ This site is powered by the following technologies:
 
 * [Github Pages](http://pages.github.com/)
 
+* [Google Web Fonts](http://google.com/webfonts)
+
 
 #### Design
 This site's design is inspired by:
@@ -34,3 +36,6 @@ This site's design is inspired by:
 * [Sacha Greif](http://sachagreif.com/)
 
 * [Adobe Kuler](https://kuler.adobe.com/)
+
+
+*__P.S.__ Like what I've done with the place? [Peep the Github repo and steal it.](https://github.com/aboutaaron/aboutaaron.github.com)*
