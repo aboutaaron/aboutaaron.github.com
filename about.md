@@ -26,6 +26,7 @@ This site is powered by the following technologies:
 
 #### Design
 This site's design is inspired by:
+
 * [The NPR Apps blog](http://blog.apps.npr.org/)
 
 * [The New York Times Debt Reckoning Feed](http://www.nytimes.com/interactive/us/politics/debt-reckoning.html)
