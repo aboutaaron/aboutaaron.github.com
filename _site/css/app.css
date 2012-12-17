@@ -141,6 +141,7 @@ blockquote p {
 }
 #small-logo {
   display: none;
+  margin-bottom: 15px;
 }
 #masthead:active {
   position: relative;
