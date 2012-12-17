@@ -3,7 +3,9 @@ layout: default
 title: Projects
 ---
 
-# Projects
+<div class="page-header">
+    <h1>{{ page.title }}</h1>
+</div>
 
 * [__Firescraper__](http://firescraper.herokuapp.com) - Rails app that tracks wildfires in California. Built with Rails, Mechanize, Sass, d3.js and leaflet. Deployed for *$Free.99* on Heroku (*slow page load though*). This app uses a ton of rake tasks to scrape the [CAL-FIRE](#) website and build a basic API out of the page. [Source on Github](http://github.com/aboutaaron/fire-scraper).
 

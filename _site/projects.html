@@ -25,9 +25,10 @@
     <div class="container">
         <div class="row">
             <div id="small-logo"><a href="/"><img src="/img/upgrade.png"></a></div>
-            <div class="span9" id="content">
-                <h1 id='projects'>Projects</h1>
-
+            <div class="span8" id="content">
+                <div class='page-header'>
+    <h1>Projects</h1>
+</div>
 <ul>
 <li>
 <p><a href='http://firescraper.herokuapp.com'><strong>Firescraper</strong></a> - Rails app that tracks wildfires in California. Built with Rails, Mechanize, Sass, d3.js and leaflet. Deployed for <em>$Free.99</em> on Heroku (<em>slow page load though</em>). This app uses a ton of rake tasks to scrape the <a href='#'>CAL-FIRE</a> website and build a basic API out of the page. <a href='http://github.com/aboutaaron/fire-scraper'>Source on Github</a>.</p>
@@ -46,17 +47,26 @@
 </li>
 </ul>
             </div>
-            <div class="span3" id="rail">
+            <div class="span3 offset1" id="rail">
                 <a id="masthead" href="/">
                     <img id="logo" src="/img/upgrade.png">
                 </a>
                 <p class="nav-header">I'm Aaron Colby Williams and I write code for fun, journalism and profit.</p>
                 <ul class="nav nav-list">
                     <li><a href="/projects.html"><i class="icon-heart"></i> Projects</a></li>
-                    <hr/>
+
                     <li><a href="http://github.com/aboutaaron"><i class="icon-github"></i> Code</a></li>
-                    <hr/>
+
                     <li><a href="/about.html"><i class="icon-book"></i> About</a></li>
+
+                    <li id="social-icons">
+                        <a title="Follow me on Twitter" href="http://twitter.com/aboutaaron">
+                            <i class="icon-twitter"></i></a>
+                        <a title="Connect with me on LinkedIn" href="http://www.linkedin.com/in/aboutaaron">
+                            <i class="icon-linkedin"></i></a>
+                        <a title="You actually use this?" href="https://plus.google.com/u/0/117735527632553483113/posts">
+                            <i class="icon-google-plus"></i></a>
+                    </li>
                 </ul>
             </div>
         </div>

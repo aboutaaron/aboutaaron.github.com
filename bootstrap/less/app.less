@@ -1,4 +1,5 @@
 @import 'variables.less';
+@import 'mixins.less';
 
 body { border-top: 10px solid @black; }
 h1 { margin-bottom: 10px; font-size: 32px; }
@@ -7,11 +8,15 @@ h3 { margin-bottom: 10px; }
 hr { margin: 18px 0px 18px 0px; border-top: 1px solid #E6E6E6; }
 
 article { padding: 20px 0px 20px 0px; margin: 0px 40px 0px 0px; }
-article:not(:last-child) { border-bottom: 1px solid #e6e6e6;}
+article:not(:last-child) { border-bottom: 1px solid @grayLighter;}
 cite { float: right; font-size: 11px; text-decoration: none; color: #666; }
 code { padding: 2px 4px; color: #D14; background-color: #F7F7F9; border: 1px solid #E1E1E8; }
 pre { background-color: #F7F7F9; border: 1px solid #E1E1E8; font-size: 13px; line-height: 19px; overflow: auto; padding: 6px 10px; border-radius: 3px; }
 blockquote p { margin: 30px 20px 30px 20px; font-size: 14px; font-weight: 200; line-height: 23px; }
+
+#content {
+  box-shadow: 4px 0px 3px @grayLighter;
+}
 
 .social { padding: 5px 5px 12px 0px; }
 .fb-like { float: left; margin: 0px 10px 10px 0px; }
@@ -37,18 +42,26 @@ blockquote p { margin: 30px 20px 30px 20px; font-size: 14px; font-weight: 200; l
 // Nav
 #small-logo { display:none; }
 
-#masthead:active { position: relative; top: 1px; }
+#masthead:active { position: relative; top: 2px; }
 
 .nav-list {
   margin-top: 15px;
   li {
+    border-bottom: 1px solid @grayLighter;
+    padding: 15px;
     a {
 
-      color: #666;
+      color: @blue;
       font-weight: bold;
       font-size: 22px;
       line-height: 28px;
       text-align: center;
+    }
+  }
+  #social-icons {
+    a {
+      display: inline-block;
+      padding: 3px 34px;
     }
   }
 }
@@ -58,7 +71,7 @@ blockquote p { margin: 30px 20px 30px 20px; font-size: 14px; font-weight: 200; l
 .nav-header {
   text-transform: none;
   font-weight: normal;
-  font-size:14px;
+  font-size:16px;
   line-height:22px;
   padding-bottom: 18px;
 
