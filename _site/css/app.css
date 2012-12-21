@@ -207,12 +207,11 @@ blockquote p {
   margin-bottom: 25px;
 }
 .audiojs {
-  width: 80%;
+  width: 50%;
   display: inline-block;
 }
-.icon-download {
-  font-size: 4em;
-  padding-left: 10px;
+form {
+  display: inline-block;
 }
 .twitter-widget {
   padding: 20px 0px 0px 0px;
