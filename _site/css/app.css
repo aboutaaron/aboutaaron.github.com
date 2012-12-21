@@ -203,6 +203,17 @@ blockquote p {
 .post-pagination {
   font-size: 18px;
 }
+.mixtape {
+  margin-bottom: 25px;
+}
+.audiojs {
+  width: 80%;
+  display: inline-block;
+}
+.icon-download {
+  font-size: 4em;
+  padding-left: 10px;
+}
 .twitter-widget {
   padding: 20px 0px 0px 0px;
 }
