@@ -210,6 +210,10 @@ blockquote p {
   width: 50%;
   display: inline-block;
 }
+.icon-download {
+  font-size: 4em;
+  padding-left: 10px;
+}
 form {
   display: inline-block;
 }
