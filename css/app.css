@@ -175,11 +175,10 @@ blockquote p {
   line-height: 22px;
 }
 .nav-header {
-  text-transform: none;
-  font-weight: normal;
-  font-size: 16px;
   line-height: 22px;
   padding-bottom: 18px;
+  color: #555555;
+  font-family: 'Bevan', cursive;
 }
 .nav-header:hover {
   color: #c32b2b;
