@@ -11,11 +11,9 @@ title: Projects
 
 * [__Awards Calendar__](http://www.latimes.com/entertainment/envelope/#title) - I was asked by Times Entertainment staff to build a calendar that staff and readers could use to keep track of upcoming award show events. I took this opportunity to build something with [Tabletop.js](http://builtbybalance.com/Tabletop/). Since the app is powered by a Google Doc spreadsheet, web producers and reporters alike — or really anyone who can update an Excel spreadsheet — can update the app.
 
-* [__Box Office Chart__](#)
-
 * [__Tagged Corporate Site__](http://about.tagged.com) - While working as a marketing intern for [Tagged, Inc](http://tagged.com), I was asked if I wanted to take a stab at redesiging their aging corporate page. I worked with the design firm [RHDG](http://rh-dg.com/) on the look and feel of the site. From there, I took their PSD files and used the excellent [Roots WordPress framework](http://www.rootstheme.com/) to bring the designs to the web. This was my first forary into client web work.
 
-* [__The Golden Gate Xpress__](http://goldengatexpress.org)
+* [__The Golden Gate Xpress__](http://goldengatexpress.org) - My college pet project. The redesign of the San Francisco State University platform. Uses WordPress and a bunch of other nifty stuff. Hack journalism!
 
 ### Writing
 
