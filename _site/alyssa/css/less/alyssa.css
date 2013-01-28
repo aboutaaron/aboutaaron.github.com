@@ -5,9 +5,19 @@ body {
   font-family: 'Miniver', cursive;
   text-align: center;
   font-size: 5rem;
+  color: #C70151;
+}
+#display:hover {
+  color: #fa0166;
 }
 #gorgeous-girl {
   margin-left: auto;
   margin-right: auto;
   display: block;
+}
+strong {
+  color: #004B67;
+}
+blockquote {
+  color: #41CCB4;
 }
