@@ -1,0 +1,13 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+#display {
+  font-family: 'Miniver', cursive;
+  text-align: center;
+  font-size: 5rem;
+}
+#gorgeous-girl {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}

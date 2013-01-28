@@ -1,0 +1,113 @@
+/*
+* Skeleton V1.1
+* Copyright 2011, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 8/17/2011
+*/
+
+
+/* Table of Contents
+==================================================
+    #Base 960 Grid
+    #Clearing */
+
+@column: 40px;
+@gutter: 20px;
+@numcolumns:16;
+
+/* #Base 960 Grid
+================================================== */
+
+    .container                                  { position: relative; width: (@column+@gutter) * @numcolumns; margin: 0 auto; padding: 0; }
+	.container.plusfour                         { width: (@column+@gutter) * (@numcolumns+4); }
+	.container.pluseight                        { width: (@column+@gutter) * (@numcolumns+8); }
+    .column, .columns                           { float: left; display: inline; margin-left: (@gutter / 2)!important; margin-right: (@gutter / 2)!important; }
+    .row                                        { margin-bottom: @gutter; }
+
+    /* Nested Column Classes */
+    .column.alpha, .columns.alpha               { margin-left: 0!important; }
+    .column.omega, .columns.omega               { margin-right: 0!important; }
+	.column.alpha.omega, 
+	.columns.alpha.omega 						{ margin: 0!important; }
+
+    
+    .container{
+		/* Base Grid */
+		 .one.column                      { width: @column; }
+		 .columns{
+		 	&.two                     { width: @column * 2 + @gutter * 1; }
+		 	&.three                   { width: @column * 3 + @gutter * 2; }
+		 	&.four                    { width: @column * 4 + @gutter * 3; }
+		 	&.five                    { width: @column * 5 + @gutter * 4; }
+		 	&.six                     { width: @column * 6 + @gutter * 5; }
+		 	&.seven                   { width: @column * 7 + @gutter * 6; }
+		 	&.eight                   { width: @column * 8 + @gutter * 7; }
+		 	&.nine                    { width: @column * 9 + @gutter * 8; }
+		 	&.ten                     { width: @column * 10 + @gutter * 9; }
+		 	&.eleven                  { width: @column * 11 + @gutter * 10; }
+		 	&.twelve                  { width: @column * 12 + @gutter * 11; }
+		 	&.thirteen                { width: @column * 13 + @gutter * 12; }
+		 	&.fourteen                { width: @column * 14 + @gutter * 13; }
+		 	&.fifteen                 { width: @column * 15 + @gutter * 14; }
+		 	&.sixteen                 { width: @column * 16 + @gutter * 15; }
+		 	&.twenty                  { width: @column * 20 + @gutter * 20; }
+		 	&.twentyfour              { width: @column * 24 + @gutter * 23; }
+		}
+		 .one-third.column                { width: ((@column+@gutter) * (@numcolumns - 1)) / 3; }
+		 .two-thirds.column               { width: ((((@column+@gutter) * (@numcolumns - 1)) / 3) * 2) + @gutter; }
+		
+		/* Offsets */
+		 .offset-by-one                   { padding-left: (@column + @gutter) * 1; }
+		 .offset-by-two                   { padding-left: (@column + @gutter) * 2; }
+		 .offset-by-three                 { padding-left: (@column + @gutter) * 3; }
+		 .offset-by-four                  { padding-left: (@column + @gutter) * 4; }
+		 .offset-by-five                  { padding-left: (@column + @gutter) * 5; }
+		 .offset-by-six                   { padding-left: (@column + @gutter) * 6; }
+		 .offset-by-seven                 { padding-left: (@column + @gutter) * 7; }
+		 .offset-by-eight                 { padding-left: (@column + @gutter) * 8; }
+		 .offset-by-nine                  { padding-left: (@column + @gutter) * 9; }
+		 .offset-by-ten                   { padding-left: (@column + @gutter) * 10; }
+		 .offset-by-eleven                { padding-left: (@column + @gutter) * 11; }
+		 .offset-by-twelve                { padding-left: (@column + @gutter) * 12; }
+		 .offset-by-thirteen              { padding-left: (@column + @gutter) * 13; }
+		 .offset-by-fourteen              { padding-left: (@column + @gutter) * 14; }
+		 .offset-by-fifteen               { padding-left: (@column + @gutter) * 15; }
+	}
+
+
+/* #Clearing
+================================================== */
+
+    /* Self Clearing Goodness */
+    .container:after { content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; }
+
+    /* Use clearfix class on parent to clear nested columns,
+    or wrap each row of columns in a <div class="row"> */
+    .clearfix:before,
+    .clearfix:after,
+    .row:before,
+    .row:after {
+      content: '\0020';
+      display: block;
+      overflow: hidden;
+      visibility: hidden;
+      width: 0;
+      height: 0; }
+    .row:after,
+    .clearfix:after {
+      clear: both; }
+    .row,
+    .clearfix {
+      zoom: 1; }
+
+    /* You can also use a <br class="clear" /> to clear columns */
+    .clear {
+      clear: both;
+      display: block;
+      overflow: hidden;
+      visibility: hidden;
+      width: 0;
+      height: 0;
+    }
