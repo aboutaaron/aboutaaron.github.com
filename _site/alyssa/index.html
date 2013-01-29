@@ -47,14 +47,27 @@
     ================================================== -->
     <div class="container">
         <div class="sixteen columns scrollblock">
-            <h1 class="remove-bottom" id="display" style="margin-top: 40px">Alyssa, I'm in love with you.</h1>
-        </div>
+            <h1 class="remove-bottom" id="display" style="margin-top: 40px">Alyssa, I'm in love with you &hearts;.</h1>
+        </div><!-- sixteen columns -->
         <div class="sixteen columns scrollblock">
-            <img id="gorgeous-girl" src="img/gorgeousgirl.jpg" alt="Alyssa Palmer, the girl I would do anything for.">
+            <div class="row">
+                <div class="four columns alpha">
+                    <img id="gorgeous-girl" src="img/gorgeousgirl.jpg" alt="Alyssa Palmer, the girl I would do anything for.">
+                </div>
+                <div class="four columns">
+                    <img id="gorgeous-girl" src="img/stupidboy.jpg" alt="The loser who messed everything up">
+                </div>
+                <div class="four columns">
+                    <img id="gorgeous-girl" src="img/gorgeousgirl.jpg" alt="Alyssa Palmer, the girl I would do anything for.">
+                </div>
+                <div class="four columns omega">
+                    <img id="gorgeous-girl" src="img/gorgeousgirl.jpg" alt="Alyssa Palmer, the girl I would do anything for.">
+                </div>
+            </div>
             <hr />
-        </div>
-        <div class="two-third column letter scrollblock">
-            <div class="two-third column">
+        </div><!-- sixteen scrollblock -->
+        <div class="sixteen columns letter scrollblock">
+
                 <h3 id="zoom-in">Dear Alyssa,</h3>
                 <p>I'm writing this letter much later than I should have. This letter contains almost a year's worth of emotion, regret and alcoholism thrown into one. I have so much to say, but I'm trying to get better at being succinct, pithy and "to the point." I plan to send you this letter on Valentine's Day because it was a year ago, today, that I royally fucked up what we had. And with that, I issue you the following treatise:
                 </p>
@@ -87,11 +100,24 @@
                     <footer>
                         &mdash; Sade, "Like A Tattoo"
                     </footer>
-                    <p><em>P.S. This song was written about war not love, but isn't love the last war we all fight?</em></p>
                 </blockquote>
                 <p>So, why am I writing you this letter? I'm writing because I don't know what else to do with us.
                 </p>
-                <span id="tldr">I want you back.</span>
+
+                <p class="tldr" id="flash">I want you back.</p>
+                <div class="row">
+                    <div class="eight columns alpha">
+                        <img id="corgis" src="img/corgis.gif" alt="Alyssa and I as corgis">
+                    </div>
+                    <div class="eight columns omega">
+                        <aside id="pregunta">
+                            <span>Can we</span>
+                            <span>be like</span>
+                            <span>these corgis?</span>
+                        </aside>
+                    </div>
+                </div>
+
                 <p>I can't think of anyone else I want to continue this wild life with. I've stopped myself from writing this letter on several occasions because I felt like you deserved better. I still think you do. You deserve someone that doesn't continually break you, scold you, toss you around at their whimsy. You deserve a love that's rich, saturating, honest and life-affirming. I have failed on all accounts to supply you with anything close to that. Furthermore, where the fuck do I get the <em>cajones</em> to ask you to come back in my life? Not only did I betray our trust (on several occasions), but I did so in such blatant disrespect to what we had built that you'd be foolish to even consider this proposal. In fact, anything you do with me will come off as an interrobang (‽). I respect your father and your friends. I don't want you to come off as the foolish girl and I don't want to be the controlling, asshole boy.
                 </p>
                 <p>But, Alyssa, I miss you so much. It's fucking me up. I was half hoping you would meet someone by now. I was prepared to meet a guy I was gonna have to act like I cared about but secretly hate. Since that hasn't happened, I'm going to try and prevent that.
@@ -103,7 +129,18 @@
                 <p>I thought moving to L.A. would make this all change. But now, I just want you down here. When I told you I thought about moving back to the Bay, I only wanted to do it for two reasons — my mother and you.
                 </p>
 
-                <img src="http://placekitten.com/900/400" alt="">
+                <div class="row">
+                    <div class="twelve columns alpha">
+                        <video height="338" width="100%" id="ourvideo" controls>
+                            <source src="http://videos.mozilla.org/serv/webmademovies/popcornplug.mp4">
+                            <source src="http://videos.mozilla.org/serv/webmademovies/popcornplug.ogv">
+                            <source src="http://videos.mozilla.org/serv/webmademovies/popcornplug.webm">
+                        </video>
+                    </div>
+                    <div class="three offset-by-one columns omega" style="background: #2f34dd;">
+                        <div id="footnotediv"></div>
+                    </div>
+                </div>
 
                 <p>So here I sit waiting. All I want to know is &hellip;</p>
 
@@ -121,9 +158,13 @@
                         &mdash; Carly Rae Jepsen, "Call Me Maybe" (with modified lyrics)
                     </footer>
                 </blockquote>
-            </div><!-- non shadow -->
 
-        </div>
+                <footer id="page-footer">
+                    <p>Regardless of how you precede going forward, I just want you to know you're an amazing person that I'm honored to know. <span id="valentine">Happy Valentine's Day &hearts;&hearts;&hearts;</span> </p>
+                </footer>
+
+
+        </div><!-- sixteen columns -->
 
     </div><!-- container -->
 
@@ -132,12 +173,11 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
 <script type="text/javascript" src="js/vendor/jquery.lettering-0.6.1.min.js"></script>
 <script type="text/javascript" src="js/vendor/jquery.scrollorama.js"></script>
-<script type="text/javascript" src="js/vendor/popcorn.min.js"></script>
+<script type="text/javascript" src="js/vendor/popcorn-complete.min.js"></script>
 <script type="text/javascript">
     $(document).ready(function() {
         // Lettering.js
         $("#display").lettering("words");
-        $("#tldr").lettering();
 
         // Scrollorama
         var scrollorama = $.scrollorama({ blocks:'.scrollblock' });
@@ -145,8 +185,8 @@
         $("#display span")
             .css("display","inline-block");
 
-        scrollorama.animate('#display',{ duration: 300, property:'zoom', end: 8 });
-
+        // Alyssa, I'm in love with you
+        scrollorama.animate('#display',{ duration: 300, property:'zoom', end: 1.8 });
         $('#display span').each(function() {
             scrollorama.animate($(this),{ duration: 400, property:'top', end: Math.random()*120-180 });
             scrollorama.animate($(this),{ duration: 300, property:'rotate', start:0, end:Math.random()*720-360 });
@@ -155,9 +195,22 @@
         // Quotes
         scrollorama.animate('#frank-ocean',{ delay: 400, duration: 300, property:'left', start:-1400, end:0 });
         scrollorama.animate('#sade',{ delay: 900, duration: 300, property:'left', start:-1400, end:0 });
-        scrollorama.animate('#carly-rae-jepsen',{ delay: 2100, duration: 300, property:'left', start:-1400, end:0 });
+        scrollorama.animate('#carly-rae-jepsen',{ delay: 2500, duration: 300, property:'left', start:-1400, end:0 });
 
-        // I Want You Back
+        //I Want You Back
+
+        // popcorn
+        // Create a popcorn instance by calling Popcorn("#id-of-my-video")
+         var pop = Popcorn("#ourvideo");
+
+         // add a footnote at 2 seconds, and remove it at 6 seconds
+         pop.footnote({
+           start: 2,
+           end: 6,
+           text: "Pop!",
+           target: "footnotediv"
+         });
+
     });
 </script>
 

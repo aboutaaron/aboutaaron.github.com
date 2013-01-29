@@ -1,29 +1,41 @@
 // para mi amor
 
+// Base Sizes
+
+// Colors
+@darkBlue: #004B67;
+@cerulean: #41CCB4;
+@tan: #FFEA95;
+@sandpaper: #FFC75D;
+@red: #C70151;
+@green: #8cc63f;
+@charcoal: #222222;
+
 // Defaults
 body {
     font-family: 'Open Sans', sans-serif;
-    border-top: 5px #8cc63f solid;
+    border-top: 10px @green solid;
+    color: @charcoal;
+    background-image: url("../img/arches.png");
+    background-repeat: repeat repeat;
 }
 
-// tldr; I fucking love this girl
+// tldr; I am in love with this girl
 #display {
     font-family: 'Miniver', cursive;
     text-align: center;
     font-size: 8rem;
-    color: #C70151;
+    color: @red;
 
     span{
         &:hover {
-            color: lighten(#C70151, 15%);
+            color: lighten(@red, 15%);
         }
     }
 }
 
 #gorgeous-girl {
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
+    width: 100%;
 }
 
 .letter {
@@ -31,9 +43,32 @@ body {
 }
 
 strong {
-    color: #004B67;
+    color: @red;
+    font-weight: bold;
 }
 
 blockquote {
-    color: #41CCB4;
+    color: @red;
+}
+
+// Fun
+.tldr {
+    text-transform: uppercase;
+    font-size: 5rem;
+    color: @red;
+}
+
+aside {
+    span {
+        text-align: left;
+        display: block;
+        font-size: 4.1rem;
+        &:hover {
+            color: @green;
+        }
+    }
+}
+
+#corgis {
+    width: 100%;
 }
