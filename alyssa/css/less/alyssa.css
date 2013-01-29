@@ -1,14 +1,15 @@
 body {
   font-family: 'Open Sans', sans-serif;
+  border-top: 5px #8cc63f solid;
 }
 #display {
   font-family: 'Miniver', cursive;
   text-align: center;
-  font-size: 5rem;
+  font-size: 8rem;
   color: #C70151;
 }
-#display:hover {
-  color: #fa0166;
+#display span:hover {
+  color: #fe1774;
 }
 #gorgeous-girl {
   margin-left: auto;
