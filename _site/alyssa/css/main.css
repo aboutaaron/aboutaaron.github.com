@@ -346,6 +346,30 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+body {
+  font-family: 'Open Sans', sans-serif;
+  border-top: 5px #8cc63f solid;
+}
+#display {
+  font-family: 'Miniver', cursive;
+  text-align: center;
+  font-size: 8rem;
+  color: #C70151;
+}
+#display span:hover {
+  color: #fe1774;
+}
+#gorgeous-girl {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+strong {
+  color: #004B67;
+}
+blockquote {
+  color: #41CCB4;
+}
 /*
 * Skeleton V1.1
 * Copyright 2011, Dave Gamache
@@ -583,6 +607,9 @@ table {
 ================================================== */
 /* Note: Design for a width of 768px */
 @media only screen and (min-width: 768px) and (max-width: 959px) {
+  #display {
+    font-size: 5rem;
+  }
   .container {
     width: 768px;
   }
@@ -725,6 +752,9 @@ table {
   img {
     width: 100%;
   }
+  #display {
+    font-size: 2rem;
+  }
   .columns,
   .column {
     margin: 0!important;
@@ -814,28 +844,4 @@ table {
   .container .columns.twentyfour {
     width: 420px;
   }
-}
-body {
-  font-family: 'Open Sans', sans-serif;
-  border-top: 5px #8cc63f solid;
-}
-#display {
-  font-family: 'Miniver', cursive;
-  text-align: center;
-  font-size: 8rem;
-  color: #C70151;
-}
-#display span:hover {
-  color: #fe1774;
-}
-#gorgeous-girl {
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-}
-strong {
-  color: #004B67;
-}
-blockquote {
-  color: #41CCB4;
 }

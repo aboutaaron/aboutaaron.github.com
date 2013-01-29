@@ -34,6 +34,10 @@
     /* Note: Design for a width of 768px */
 
     @media only screen and (min-width: 768px) and (max-width: 959px) {
+        // Addtions
+        #display { font-size: 5rem; }
+
+        //libs
 		@column:28px;
 		@gutter:20px;
 		@numcolumns:16;
@@ -96,7 +100,11 @@
 
 
     @media only screen and (max-width: 767px) {
+        // Additions
     	img { width: 100%; }
+        #display { font-size: 2rem; }
+
+        // Lib
         .columns, .column { margin: 0!important; }
 
 		.container{ width:@mobileportrait;
