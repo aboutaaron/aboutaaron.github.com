@@ -352,6 +352,9 @@ body {
   background-image: url("../img/arches.png");
   background-repeat: repeat repeat;
 }
+img {
+  width: 100%;
+}
 #display {
   font-family: 'Oleo Script', cursive;
   text-align: center;
@@ -395,6 +398,11 @@ aside span:hover {
 }
 #corgis {
   width: 100%;
+}
+.icon {
+  font-size: 8rem;
+  display: block;
+  text-align: center;
 }
 /*
 * Skeleton V1.1
