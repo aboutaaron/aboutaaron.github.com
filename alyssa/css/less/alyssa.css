@@ -1,14 +1,17 @@
 body {
   font-family: 'Open Sans', sans-serif;
-  border-top: 10px #8cc63f solid;
   color: #222222;
   background-image: url("../img/arches.png");
   background-repeat: repeat repeat;
 }
+header {
+  margin: 100px 100px;
+}
 #display {
-  font-family: 'Miniver', cursive;
+  font-family: 'Oleo Script', cursive;
   text-align: center;
   font-size: 8rem;
+  line-height: 8rem;
   color: #c70151;
 }
 #display span:hover {
@@ -24,14 +27,17 @@ strong {
 blockquote {
   color: #c70151;
   font-size: 24px;
+  font-family: 'Oswald', sans-serif;
 }
 #salutation {
   font-size: 5rem;
+  font-family: 'Oswald', sans-serif;
 }
 .tldr {
   text-transform: uppercase;
   font-size: 5rem;
-  color: #c70151;
+  color: #333333;
+  font-family: 'Oswald', sans-serif;
 }
 aside span {
   text-align: left;

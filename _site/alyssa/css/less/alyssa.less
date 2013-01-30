@@ -1,6 +1,8 @@
 // para mi amor
 
 // Base Sizes
+@displayFont: 'Oleo Script', cursive;
+@blockFont: 'Oswald', sans-serif;
 
 // Colors
 @darkBlue: #004B67;
@@ -10,21 +12,26 @@
 @red: #C70151;
 @green: #8cc63f;
 @charcoal: #222222;
+@darkGray: #333;
 
 // Defaults
 body {
     font-family: 'Open Sans', sans-serif;
-    border-top: 10px @green solid;
     color: @charcoal;
     background-image: url("../img/arches.png");
     background-repeat: repeat repeat;
 }
 
 // tldr; I am in love with this girl
+header {
+    margin: 100px 100px;
+}
+
 #display {
-    font-family: 'Miniver', cursive;
+    font-family: @displayFont;
     text-align: center;
     font-size: 8rem;
+    line-height: 8rem;
     color: @red;
 
     span{
@@ -50,17 +57,20 @@ strong {
 blockquote {
     color: @red;
     font-size: 24px;
+    font-family: @blockFont;
 }
 
 #salutation {
     font-size: 5rem;
+    font-family: @blockFont;
 }
 
 // Fun
 .tldr {
     text-transform: uppercase;
     font-size: 5rem;
-    color: @red;
+    color: @darkGray;
+    font-family: @blockFont;
 }
 
 aside {
