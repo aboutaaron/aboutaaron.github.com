@@ -352,15 +352,13 @@ body {
   background-image: url("../img/arches.png");
   background-repeat: repeat repeat;
 }
-header {
-  margin: 100px 100px;
-}
 #display {
   font-family: 'Oleo Script', cursive;
   text-align: center;
   font-size: 8rem;
   line-height: 8rem;
   color: #c70151;
+  padding: 100px 0 100px 0;
 }
 #display span:hover {
   color: #fe1774;
