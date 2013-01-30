@@ -4,8 +4,11 @@ body {
   background-image: url("../img/arches.png");
   background-repeat: repeat repeat;
 }
-img {
+body img {
   width: 100%;
+}
+body p {
+  line-height: 24px;
 }
 #display {
   font-family: 'Oleo Script', cursive;
