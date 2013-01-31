@@ -237,16 +237,16 @@
             maxZoom: 18
         }).addTo(map);
 
-        // Loud cloudmade?
+        // Geocode with cloudmade?
         //var geocoder = new CM.Geocoder('0064577453aa486d98cec7f0ef57578f');
 
         var fremont = L.marker([37.54827,-121.988572])
-            .bindPopup("<strong>Alyssa,</strong><br>you live here and ...")
+            .bindPopup("<strong>Alyssa,</strong><br>you live here ...")
             .addTo(map)
             .openPopup();
 
         var altadena = L.marker([34.181993,-118.1374])
-            .bindPopup("<strong>Me?</strong><br>Down here.")
+            .bindPopup("<strong>Me?</strong><br>Down here.<br><small>(Now, click anywhere on the map)</small>")
             .addTo(map)
 
         var popup = L.popup();
@@ -254,7 +254,7 @@
             popup
                 .setLatLng(e.latlng)
                 .setContent("<strong>But, we can travel anywhere!</strong>\
-                    <br> For example this is " + e.latlng)
+                    <br> For example this is <address>" + e.latlng + "</address>")
                 .openOn(map);
         }
 
