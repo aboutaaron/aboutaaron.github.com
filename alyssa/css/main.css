@@ -405,6 +405,9 @@ blockquote {
 #pregunta span:hover {
   color: #8cc63f;
 }
+footer #map {
+  height: 338px;
+}
 /*
 * Skeleton V1.1
 * Copyright 2011, Dave Gamache

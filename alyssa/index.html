@@ -7,7 +7,7 @@
     　　　　　　　　 　 　 　 ,, 、
 　　　　　　　　　　　　/: : l　　,, -､
 　　　　　　　 　 　 , : :' ':'└ノﾞ　:;;ﾘ
-　　　　　　 　 　､'　 .: : : : : ミ .::;/　　　　　ﾍｯﾍｯﾍｯﾍｯ
+　　　　　　 　 　､'　 .: : : : : ミ .::;/　　　　　
 　　 　 　 　 　 ノ゛ ゎ::.: :'¨ﾞ::.: :;八
 　　 　 　 　 rｯ　　　 ,_　　　:: : : : ﾞ ,
 　　 　 　 　 `ｩ--イヌﾞ　　　　:　　　' ,
@@ -21,14 +21,14 @@
 　　　　　　　　　　 　 ',´, , ,,,ノ l:　　彡;;; ; ; ; ; : : : : :: ; ; ; ;;;ﾐ`
 　 　 　 　 　 　 　 　 　 　 , -‐'ﾞ　 ｿﾞ ' ' ' ' ' ' ' ' ﾞ ﾞ ﾞ ﾞ ﾞ ﾞ´
 　　　　　　　　　 　 　 　 　`' ' ' '´
-    What's up dog?
+    This is `NomNom` the Welsh corgi and he would like to wish you a Happy Valentine's Day!
     -->
 <head>
 
     <!-- Basic Page Needs
   ================================================== -->
     <meta charset="utf-8">
-    <title>Ms. Palmer, I'm in love with you.</title>
+    <title>Ms. Palmer, you rock.</title>
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -39,6 +39,10 @@
     <!-- CSS
   ================================================== -->
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/leaflet.css" />
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="css/leaflet.ie.css" />
+    <![endif]-->
 
     <!-- Webfonts
   ================================================== -->
@@ -55,10 +59,10 @@
 
     <!-- Favicons
     ================================================== -->
-    <link rel="shortcut icon" href="images/favicon.ico">
-    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
 
 </head>
 <body>
@@ -167,21 +171,26 @@
                     </div>
                 </div><!-- row -->
 
-                <footer id="page-footer" class="scrollblock">
-                    <h2 id="valentine">Happy Valentine's Day &hearts;&hearts;&hearts;</h2>
-                </footer>
+                <div id="page-footer" class="scrollblock">
+                    <p id="valentine">Happy Valentine's Day &hearts;&hearts;&hearts;</p>
+                </div>
 
 
         </div><!-- sixteen columns -->
 
     </div><!-- container -->
 
+    <footer>
+        <div id="map"></div>
+    </footer>
+
 <!-- Yavascreept
 ===================================================-->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
 <script type="text/javascript" src="js/vendor/jquery.lettering-0.6.1.min.js"></script>
 <script type="text/javascript" src="js/vendor/jquery.scrollorama.js"></script>
-<script type="text/javascript" src="js/vendor/popcorn-complete.min.js"></script>
+
+<script type="text/javascript" src="js/vendor/leaflet.js"></script>
 <script type="text/javascript">
     $(document).ready(function() {
         // Lettering.js
@@ -208,18 +217,48 @@
         // Happy Valentine's Day
         scrollorama.animate('#valentine',{ delay: 200, duration: 300, property:'zoom', start: 2.8 });
 
-        // popcorn
-        // Create a popcorn instance by calling Popcorn("#id-of-my-video")
-         var pop = Popcorn("#ourvideo");
 
-         // add a footnote at 2 seconds, and remove it at 6 seconds
-         pop.footnote({
-           start: 2,
-           end: 6,
-           text: "Pop!",
-           target: "footnotediv"
-         });
+    });
+</script>
+<script type="text/javascript">
+    jQuery(document).ready(function($) {
+        var map = new L.map('map', {
+          center: new L.LatLng(36.985003,-110.34668),
+          zoom: 5,
+          scrollWheelZoom: false,
+          touchZoom: false,
+          doubleClickZoom: false,
+          zoomControl: false,
+          //dragging: false
+        });
 
+        L.tileLayer('http://{s}.tile.stamen.com/watercolor/{z}/{x}/{y}.png', {
+            attribution: "Map tiles by <a href='http://stamen.com'>Stamen Design</a>, under <a href='http://creativecommons.org/licenses/by/3.0'>CC BY 3.0</a>. Data by <a href='http://openstreetmap.org'>OpenStreetMap</a>, under <a href='http://creativecommons.org/licenses/by-sa/3.0'>CC BY SA</a>.",
+            maxZoom: 18
+        }).addTo(map);
+
+        // Loud cloudmade?
+        //var geocoder = new CM.Geocoder('0064577453aa486d98cec7f0ef57578f');
+
+        var fremont = L.marker([37.54827,-121.988572])
+            .bindPopup("<strong>Alyssa,</strong><br>you live here and ...")
+            .addTo(map)
+            .openPopup();
+
+        var altadena = L.marker([34.181993,-118.1374])
+            .bindPopup("<strong>Me?</strong><br>Down here.")
+            .addTo(map)
+
+        var popup = L.popup();
+        function onMapClick(e) {
+            popup
+                .setLatLng(e.latlng)
+                .setContent("<strong>But, we can travel anywhere!</strong>\
+                    <br> For example this is " + e.latlng)
+                .openOn(map);
+        }
+
+        map.on('click', onMapClick);
     });
 </script>
 

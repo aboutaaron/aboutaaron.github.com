@@ -57,3 +57,6 @@ blockquote {
 #pregunta span:hover {
   color: #8cc63f;
 }
+footer #map {
+  height: 338px;
+}
