@@ -43,12 +43,13 @@ blockquote {
   color: #333333;
   font-family: 'Oswald', sans-serif;
 }
-aside span {
+#pregunta span {
   text-align: left;
   display: block;
-  font-size: 4.1rem;
+  font-size: 3.5rem;
+  line-height: 3.5rem;
 }
-aside span:hover {
+#pregunta span:hover {
   color: #8cc63f;
 }
 #corgis {
