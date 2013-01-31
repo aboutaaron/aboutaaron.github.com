@@ -129,14 +129,15 @@
                         &mdash; Sade, "Like A Tattoo"
                     </footer>
                 </blockquote>
-                <p>So, why am I writing you this letter? I'm writing because I don't know what else to do with us.
+
+                <p>So, why am I writing you this letter? I can't think of anyone else I want to continue this wild life with. I've stopped myself from writing this letter on several occasions because I felt like you deserved better. I still think you do. You deserve someone that doesn't continually break you, scold you, toss you around at their whimsy. You deserve a love that's rich, saturating, honest and life-affirming. I have failed on all accounts to supply you with anything close to that. Furthermore, where the fuck do I get the <em>cajones</em> to ask you to come back in my life? Not only did I betray our trust (on several occasions), but I did so in such blatant disrespect to what we had built that you'd be foolish to even consider this proposal. In fact, anything you do with me will come off as an interrobang (‽). I respect your father and your friends. I don't want you to come off as the foolish girl and I don't want to be the controlling, asshole boy.
                 </p>
                 <div class="row">
                     <div class="eight columns alpha">
                         <img id="corgis" src="img/corgis.gif" alt="Alyssa and I as corgis">
                     </div>
                     <div class="eight columns omega">
-                        <aside id="pregunta">
+                        <aside class="tldr" id="pregunta">
                             <span>Can we</span>
                             <span>be like</span>
                             <span>these corgis?</span>
@@ -144,9 +145,7 @@
                     </div>
                 </div>
 
-                <p>I can't think of anyone else I want to continue this wild life with. I've stopped myself from writing this letter on several occasions because I felt like you deserved better. I still think you do. You deserve someone that doesn't continually break you, scold you, toss you around at their whimsy. You deserve a love that's rich, saturating, honest and life-affirming. I have failed on all accounts to supply you with anything close to that. Furthermore, where the fuck do I get the <em>cajones</em> to ask you to come back in my life? Not only did I betray our trust (on several occasions), but I did so in such blatant disrespect to what we had built that you'd be foolish to even consider this proposal. In fact, anything you do with me will come off as an interrobang (‽). I respect your father and your friends. I don't want you to come off as the foolish girl and I don't want to be the controlling, asshole boy.
-                </p>
-                <p>But, Alyssa, I miss you so much. It's fucking me up. I was half hoping you would meet someone by now. I was prepared to meet a guy I was gonna have to act like I cared about but secretly hate. Since that hasn't happened, I'm going to try and prevent that.
+                <p>Alyssa, I miss you so much. It's fucking me up. I was half hoping you would meet someone by now. I was prepared to meet a guy I was gonna have to act like I cared about but secretly hate. Since that hasn't happened, I'm going to try and prevent that.
                 </p>
                 <p>I don't know what to call this. This is equal parts love letter and confession. I've created a mess of all of this. However, we're 23 years old and we both (hopefully) at least have another 20-plus years going for us.
                 </p>
@@ -155,7 +154,7 @@
                 <p>I thought moving to L.A. would make this all change. But now, I just want you down here. When I told you I thought about moving back to the Bay, I only wanted to do it for two reasons — my mother and you.
                 </p>
 
-                <div class="row">
+                <!-- <div class="row">
                     <div class="twelve columns alpha">
                         <video height="338" width="100%" id="ourvideo" controls>
                             <source src="http://videos.mozilla.org/serv/webmademovies/popcornplug.mp4">
@@ -166,10 +165,10 @@
                     <div class="three offset-by-one columns omega" style="background: #2f34dd;">
                         <div id="footnotediv"></div>
                     </div>
-                </div>
+                </div><!-- row -->
 
-                <footer id="page-footer">
-                    <span id="display">Happy Valentine's Day &hearts;&hearts;&hearts;</span>
+                <footer id="page-footer" class="scrollblock">
+                    <h2 id="valentine">Happy Valentine's Day &hearts;&hearts;&hearts;</h2>
                 </footer>
 
 
@@ -187,6 +186,7 @@
     $(document).ready(function() {
         // Lettering.js
         $("#display").lettering("words");
+        $("#valentine").lettering("words");
 
         // Scrollorama
         var scrollorama = $.scrollorama({ blocks:'.scrollblock', enablePin:false });
@@ -204,9 +204,9 @@
         // Quotes
         scrollorama.animate('#frank-ocean',{ delay: 600, duration: 300, property:'left', start:-1400, end:0 });
         scrollorama.animate('#sade',{ delay: 1200, duration: 300, property:'left', start:-1400, end:0 });
-        scrollorama.animate('#carly-rae-jepsen',{ delay: 3000, duration: 300, property:'left', start:-1400, end:0 });
 
-        //I Want You Back
+        // Happy Valentine's Day
+        scrollorama.animate('#valentine',{ delay: 200, duration: 300, property:'zoom', start: 2.8 });
 
         // popcorn
         // Create a popcorn instance by calling Popcorn("#id-of-my-video")

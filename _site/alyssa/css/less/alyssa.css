@@ -21,8 +21,16 @@ body p {
 #display span:hover {
   color: #fe1774;
 }
-#gorgeous-girl {
-  width: 100%;
+#valentine {
+  font-family: 'Oleo Script', cursive;
+  text-align: center;
+  font-size: 8rem;
+  line-height: 8rem;
+  color: #c70151;
+  padding: 100px 0 100px 0;
+}
+#valentine span:hover {
+  color: #fe1774;
 }
 strong {
   color: #c70151;
@@ -44,19 +52,8 @@ blockquote {
   font-family: 'Oswald', sans-serif;
 }
 #pregunta span {
-  text-align: left;
-  display: block;
-  font-size: 3.5rem;
-  line-height: 3.5rem;
+  font-size: 4rem;
 }
 #pregunta span:hover {
   color: #8cc63f;
-}
-#corgis {
-  width: 100%;
-}
-.icon {
-  font-size: 8rem;
-  display: block;
-  text-align: center;
 }
