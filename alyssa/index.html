@@ -240,6 +240,8 @@
         // Geocode with cloudmade?
         //var geocoder = new CM.Geocoder('0064577453aa486d98cec7f0ef57578f');
 
+        "http://geocoding.cloudmade.com/0064577453aa486d98cec7f0ef57578f/geocoding/v2/find.html?around=object&object_type=OBJECT_TYPE"
+
         var fremont = L.marker([37.54827,-121.988572])
             .bindPopup("<strong>Alyssa,</strong><br>you live here ...")
             .addTo(map)
@@ -254,7 +256,7 @@
             popup
                 .setLatLng(e.latlng)
                 .setContent("<strong>But, we can travel anywhere!</strong>\
-                    <br> For example this is <address>" + e.latlng + "</address>")
+                    <br> For example this is <address>" + e.latlng.replace('LatLng(','').replace(')','') + "</address>")
                 .openOn(map);
         }
 
