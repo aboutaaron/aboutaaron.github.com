@@ -50,8 +50,6 @@
     <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Oleo+Script' rel='stylesheet' type='text/css'>
 
-
-
     <!--[if lt IE 9]>
         <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -63,6 +61,10 @@
     <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
     <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
     <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+
+    <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAp-FkgYLqaU9Vdze3UYd3X7FGC6oadfQ0&sensor=false">
+    </script>
 
 </head>
 <body>
@@ -237,9 +239,15 @@
             maxZoom: 18
         }).addTo(map);
 
-        // Geocode with cloudmade?
-        //var geocoder = new CM.Geocoder('0064577453aa486d98cec7f0ef57578f');
+        // Google
+        var geocoder;
+        function initialize() {
+            geocoder = google.maps.Geocoder();
+        }
+        var latlng = new google.maps.LatLng(37.54827,-121.988572);
+        //alert(geocoder.geocode(latlng));
 
+        // Back at it
         var fremont = L.marker([37.54827,-121.988572])
             .bindPopup("<strong>Alyssa,</strong><br>you live here ...")
             .addTo(map)
@@ -254,7 +262,7 @@
             popup
                 .setLatLng(e.latlng)
                 .setContent("<strong>But, we can travel anywhere!</strong>\
-                    <br> For example this is <address>" + e.latlng.toString().replace('LatLng(','').replace(')','') + "</address>")
+                    <br> For example this is <address>" + e.latlng + "</address>")
                 .openOn(map);
         }
 
