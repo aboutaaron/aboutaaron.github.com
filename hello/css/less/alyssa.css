@@ -60,3 +60,9 @@ aside#tldr span:hover {
   border: 10px solid #8cc63f;
   margin-top: 24px;
 }
+small {
+  float: right;
+}
+small a {
+  color: #c70151;
+}
