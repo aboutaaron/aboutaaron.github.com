@@ -10,7 +10,7 @@
         <link href="/css/bootstrap.css" rel="stylesheet">
         <link href="/css/app.css" rel="stylesheet">
         <link rel="shortcut icon" href="/img/favicon.ico">
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans|Bevan' rel='stylesheet' type='text/css'>
     </head>
     <body>
     <div id="fb-root"></div>
@@ -62,7 +62,6 @@
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
     <script type="text/javascript" src="/js/jquery.box2d.min.js"></script>
-    <script src="/js/audiojs/audio.js"></script>
 
     <script type="text/javascript">
 
@@ -70,10 +69,6 @@
         $(document).ready(function() {
             $("#easter-egg").click(function() {
                 $("#logo, i").box2d({'y-velocity':5});
-            });
-
-            audiojs.events.ready(function() {
-                var as = audiojs.createAll();
             });
           });
         /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
