@@ -5,7 +5,7 @@ title: Projects
 
 ### Code
 
-* __Proper Coffee__ - A Backbone app that displays proper ratios for espresso drinks. This app combines my love of coffee with my love of code. While the app is still a work in progress, the code is on Github. Take a look. [Source on Github](http://github.com/aboutaaron/proper-coffee).
+* [__Proper Coffee__](http://aboutaaron.com/proper-coffee) - A Backbone app that displays proper ratios for espresso drinks. This app combines my love of coffee with my love of code. Though without a backend, the app looks pretty cool (to me anyway). Take a look. [Source on Github](http://github.com/aboutaaron/proper-coffee).
 
 * [__Firescraper__](http://firescraper.herokuapp.com) - Rails app that tracks wildfires in California. Built with Rails, Mechanize, Sass, d3.js and leaflet. Deployed for *$Free.99* on Heroku. This app uses rake tasks to scrape the [CAL-FIRE](http://www.fire.ca.gov/) website and build a basic API out of the page. I'm currently refactoring this code and plan to relaunch soon with fires from 2013. [Source on Github](http://github.com/aboutaaron/fire-scraper).
 

@@ -3,3 +3,28 @@
 
 // Include responsive Bootstrap styles
 @import "bootstrap-responsive";
+
+// Para yo
+
+body {
+    background: url(http://static.tumblr.com/0otjmbo/467ml8p53/__tyrannosaurus_rex___by_gastrolito.jpg) top 90px right no-repeat;
+    background-attachment: fixed;
+
+    font-family: 'Lora', serif;
+    font-size: 16px;
+
+    margin-top: 20px;
+}
+
+ul li a {
+    color: $black;
+    text-decoration: underline;
+}
+
+#logo {
+    &:active {
+        position: relative;
+        top: 2px;
+    }
+}
+

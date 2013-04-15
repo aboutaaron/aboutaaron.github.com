@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<ul class="nav">
+<ul class="unstyled">
     <li>
         <a href="http://github.com/aboutaaron">Github</a>
     </li>
