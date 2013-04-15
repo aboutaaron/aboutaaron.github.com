@@ -11,30 +11,27 @@
         <meta name="viewport" content="width=device-width">
 
         <link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="stylesheets/normalize.css">
-        <link rel="stylesheet" href="stylesheets/app.css">
+        <link rel="stylesheet" href="stylesheets/styles.css">
     </head>
     <body>
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
 
-        <header>
-            <div class="row">
-                <div class="large-4 large-offset-4 columns">
+        <header class="container">
+            <section class="span4 offset4">
                     <a href="/" title="Go back home">
                         <img id="logo" src="img/avatar-hires.jpg" alt="Welcome to Aaron's website">
                     </a>
                     <h1>Aaron Williams</h1> <p>is a web developer and journalist currently in <span>Los Angeles.</span></p>
-                </div>
-            </div>
+            </section>
         </header>
-        <section id="main">
-            <div class="row">
-                <div class="large-6 large-offset-3 columns">
-                    {{ content }}
-                </div>
-            </div>
+
+
+        <section class="container" id="main">
+            <section class="span4 offset4">
+                {{ content }}
+            </section>
         </section>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
