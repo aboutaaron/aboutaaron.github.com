@@ -8287,20 +8287,20 @@ a.label:hover, a.label:focus, a.badge:hover, a.badge:focus {
 }
 /* line 9, ../sass/styles.scss */
 body {
-  background: url(http://static.tumblr.com/0otjmbo/467ml8p53/__tyrannosaurus_rex___by_gastrolito.jpg) top 90px right no-repeat;
+  background: url(http://static.tumblr.com/0otjmbo/467ml8p53/__tyrannosaurus_rex___by_gastrolito.jpg) top 90px right 15px no-repeat;
   background-attachment: fixed;
   font-family: 'Lora', serif;
   font-size: 16px;
   margin-top: 20px;
 }
 
-/* line 19, ../sass/styles.scss */
+/* line 22, ../sass/styles.scss */
 ul li a {
   color: black;
   text-decoration: underline;
 }
 
-/* line 25, ../sass/styles.scss */
+/* line 29, ../sass/styles.scss */
 #logo:active {
   position: relative;
   top: 2px;

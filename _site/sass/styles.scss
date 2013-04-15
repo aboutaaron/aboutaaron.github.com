@@ -7,7 +7,7 @@
 // Para yo
 
 body {
-    background: url(http://static.tumblr.com/0otjmbo/467ml8p53/__tyrannosaurus_rex___by_gastrolito.jpg) top 90px right no-repeat;
+    background: url(http://static.tumblr.com/0otjmbo/467ml8p53/__tyrannosaurus_rex___by_gastrolito.jpg) top 90px right 15px no-repeat;
     background-attachment: fixed;
 
     font-family: 'Lora', serif;
@@ -16,9 +16,13 @@ body {
     margin-top: 20px;
 }
 
-ul li a {
-    color: $black;
-    text-decoration: underline;
+ul {
+    //@extend .unstyled;
+
+    li a {
+        color: $black;
+        text-decoration: underline;
+    }
 }
 
 #logo {
