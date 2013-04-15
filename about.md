@@ -3,13 +3,11 @@ layout: default
 title: About
 ---
 
-I am journalist who tends to speak more with code than words.
+I started programming seriously around two years ago thinking I'd never get this far. Calling myself a "web developer" seemed like a distant dream back then. And yet, through perserverance — and a lot of coffee — I think I've done pretty well for myself.
 
-I've spent the last couple of years transitioning from news writing and editing to computer programming. Over the course of two years, I've taught myself the foundations of computer programming, web design and web development and plan to focus my career down that pipeline. Most recently, I helped conceptualize, design and build the corporate/marketing website for Tagged, Inc. and currently wrangle code for the Los Angeles Times.
+I like JavaScript, Ruby, Object-oriented practices and HTML prototypes. I don't know if I fancy myself a frontend or backend dev. **I just like to code.**
 
-I am always interested in new opportunities, ways to learn and all things computer science related.
-
-My goal is to work at major media-driven company doing web development and programming.
+Want to learn more? Visit my [Github](http://github/aboutaaron), follow me [Twitter](http://twitter.com/aboutaaron), or say hello — **aaron** [at] this domain [dot] com
 
 ### Colophon
 
@@ -23,19 +21,16 @@ This site is powered by the following technologies:
 
 * [Github Pages](http://pages.github.com/)
 
-* [Google Web Fonts](http://google.com/webfonts)
+* [Lora web font](http://google.com/webfonts)
 
 
 #### Design
-This site's design is inspired by:
+For this site redesign, I wanted something simple, yet functional. I moved the blogging feature off to [Tumblr](http://blog.aboutaaron.com) gutted Bootstrap's LessCSS for the SASS variant. What left is a site that's easy to maintain and a breeze yo update.
 
-* [The NPR Apps blog](http://blog.apps.npr.org/)
+These folks inspired the design
 
-* [The New York Times Debt Reckoning Feed](http://www.nytimes.com/interactive/us/politics/debt-reckoning.html)
+* [Beta Prime](http://betaprime.tumblr.com) - I took Evan Walsh's simplistic Tumblr theme and rehauled it for my blog and site. Notably, I've beefed up the font size and went for a nice
 
-* [Sacha Greif](http://sachagreif.com/)
+#### Tyrannosaurus Rex
 
-* [Adobe Kuler](https://kuler.adobe.com/)
-
-
-*__P.S.__ Like what I've done with the place? [Peep the Github repo and steal it.](https://github.com/aboutaaron/aboutaaron.github.com)*
+The tyrannosaurid to the right appears courtesy of [Gastrolito]().
