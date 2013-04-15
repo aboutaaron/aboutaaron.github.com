@@ -5,6 +5,8 @@ title: Projects
 
 ### Code
 
+* [__The SF Appeal__](http://sfappeal.com) - I worked and with long time friend and Appeal founder Eve Batey to bring her online newspaper into 2013. Taking a WordPress theme template, we gutted it and made something that I personally think looks pretty sweet.
+
 * [__Proper Coffee__](http://aboutaaron.com/proper-coffee) - A Backbone app that displays proper ratios for espresso drinks. This app combines my love of coffee with my love of code. Though without a backend, the app looks pretty cool (to me anyway). Take a look. [Source on Github](http://github.com/aboutaaron/proper-coffee).
 
 * [__Firescraper__](http://firescraper.herokuapp.com) - Rails app that tracks wildfires in California. Built with Rails, Mechanize, Sass, d3.js and leaflet. Deployed for *$Free.99* on Heroku. This app uses rake tasks to scrape the [CAL-FIRE](http://www.fire.ca.gov/) website and build a basic API out of the page. I'm currently refactoring this code and plan to relaunch soon with fires from 2013. [Source on Github](http://github.com/aboutaaron/fire-scraper).
@@ -17,7 +19,7 @@ title: Projects
 
 * [__Tagged Corporate Site__](http://about.tagged.com) - While working as a marketing intern for [Tagged, Inc](http://tagged.com), I was asked if I wanted to take a stab at redesiging their aging corporate page. I worked with the design firm [RHDG](http://rh-dg.com/) on the look and feel of the site. From there, I took their PSD files and used the excellent [Roots WordPress framework](http://www.rootstheme.com/) to bring the designs to the web. This was my first forary into client web work.
 
-* [__The Golden Gate Xpress__](http://goldengatexpress.org) - My college pet project. The redesign of the San Francisco State University platform. Uses WordPress and a bunch of other nifty stuff. Hack journalism!
+* [__The Golden Gate Xpress__](http://goldengatexpress.org) - My college pet project. The redesign of the San Francisco State University platform. Uses WordPress and a bunch of other nifty stuff.
 
 ### Writing
 
