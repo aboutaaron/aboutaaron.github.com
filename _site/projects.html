@@ -1,175 +1,109 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!--
+                                           ,-.             __
+                                         ,'   `---.___.---'  `.
+                                       ,'   ,-                 `-._
+                                     ,'    /                       \
+                                  ,\/     /                        \\
+                              )`._)>)     |                         \\
+                              `>,'    _   \                  /       ||
+                                )      \   |   |            |        |\\
+                       .   ,   /        \  |    `.          |        | ))
+                       \`. \`-'          )-|      `.        |        /((
+                        \ `-`   .`     _/  \ _     )`-.___.--\      /  `'
+                         `._         ,'     `j`.__/           `.    \
+                           / ,    ,'         \   /`             \   /
+                           \__   /           _) (               _) (
+                             `--'           /____\             /____\
+-->
     <head>
         <meta charset="utf-8">
-        <title> aboutaaron | Projects </title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Projects - aboutaaron.com</title>
         <meta name="description" content="">
-        <meta name="author" content="Aaron Williams">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="/css/bootstrap.css" rel="stylesheet">
-        <link href="/css/app.css" rel="stylesheet">
-        <link rel="shortcut icon" href="/img/favicon.ico">
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans|Bevan' rel='stylesheet' type='text/css'>
+
+        <link rel="shortcut icon" href="/images/favicon.ico">
+        <link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="stylesheets/styles.css">
     </head>
     <body>
-    <div id="fb-root"></div>
-    <script>(function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-    </script>
-    <div class="container">
-        <div class="row">
-            <div id="small-logo"><a title="Return home why don't you?" href="/"><img src="/img/upgrade.png" alt="Me as a child."></a></div>
-            <div class="span8">
-                <section id="content">
-                    <article>
-    <header class="page-header">
-        <h1>Projects</h1>
-    </header>
-    <section class="entry"><h3 id="code">Code</h3>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+        <header class="container">
+            <section class="span4">
+                    <a href="/" title="Go back home">
+                        <img id="logo" src="images/avatar-web.jpg" alt="Welcome to Aaron's website">
+                    </a>
+                    <h1>aboutaaron.com</h1>
+            </section>
+        </header>
+
+
+        <section class="container" id="main">
+            <section class="span4">
+                <h3>Code</h3>
 
 <ul>
-  <li>
-    <p><strong>Proper Coffee</strong> - A Backbone app that displays proper ratios for espresso drinks. This app combines my love of coffee with my love of code. While the app is still a work in progress, the code is on Github. Take a look. <a href="http://github.com/aboutaaron/proper-coffee">Source on Github</a>.</p>
-  </li>
-  <li>
-    <p><a href="http://firescraper.herokuapp.com"><strong>Firescraper</strong></a> - Rails app that tracks wildfires in California. Built with Rails, Mechanize, Sass, d3.js and leaflet. Deployed for <em>$Free.99</em> on Heroku. This app uses rake tasks to scrape the <a href="http://www.fire.ca.gov/">CAL-FIRE</a> website and build a basic API out of the page. I’m currently refactoring this code and plan to relaunch soon with fires from 2013. <a href="http://github.com/aboutaaron/fire-scraper">Source on Github</a>.</p>
-  </li>
-  <li>
-    <p><strong>ClearCache.js</strong> - Bookmarklet to clear page cache. Mostly used by me for production speed at <a href="http://latimes.com">Los Angeles Times</a>. Drag to your browser’s bookmark bar and click on it to … <em>clear the cache.</em> Click on it here for a demo <strong>»</strong> <a href="javascript:(function(){document.body.appendChild(document.createElement('script')).src='http://aboutaaron.com/js/clearcache.js';})();" class="btn btn-mini">Drag this</a></p>
-  </li>
-  <li>
-    <p><strong>Event Calendar</strong> - I was asked by Times Entertainment staff to build a calendar that staff and readers could use to keep track of upcoming award show events. I took this opportunity to build something with <a href="http://builtbybalance.com/Tabletop/">Tabletop.js</a>. Since the app is powered by a Google Doc spreadsheet, web producers and reporters alike — or really anyone who can update an Excel spreadsheet — can update the app. I’ve recently begun porting the app over to use the Times’ spreadsheet tool <a href="http://spreadsheets.latimes.com">spreadsheets.latimes.com</a>. Link coming soon.</p>
-  </li>
-  <li>
-    <p><strong>Box Office</strong> - I wrote a small Sinatra app that generates interactive charts based on weekend domestic box office estimates. The final chart is embedded within the Sunday box office story written by Times’ Company Town reporters (<a href="http://www.latimes.com/entertainment/envelope/cotown/la-et-ct-box-office-jack-giant-slayer-20130303,0,682372.story">example</a>). The app uses Miso Dataset, Highcharts and Amazon S3.</p>
-  </li>
-  <li>
-    <p><a href="http://about.tagged.com"><strong>Tagged Corporate Site</strong></a> - While working as a marketing intern for <a href="http://tagged.com">Tagged, Inc</a>, I was asked if I wanted to take a stab at redesiging their aging corporate page. I worked with the design firm <a href="http://rh-dg.com/">RHDG</a> on the look and feel of the site. From there, I took their PSD files and used the excellent <a href="http://www.rootstheme.com/">Roots WordPress framework</a> to bring the designs to the web. This was my first forary into client web work.</p>
-  </li>
-  <li>
-    <p><a href="http://goldengatexpress.org"><strong>The Golden Gate Xpress</strong></a> - My college pet project. The redesign of the San Francisco State University platform. Uses WordPress and a bunch of other nifty stuff. Hack journalism!</p>
-  </li>
+<li><p><a href="http://sfappeal.com"><strong>The SF Appeal</strong></a> - I worked and with long time friend and Appeal founder Eve Batey to bring her online newspaper into 2013. Taking a WordPress theme template, we gutted it and made something that I personally think looks pretty sweet.</p></li>
+<li><p><a href="http://aboutaaron.com/proper-coffee"><strong>Proper Coffee</strong></a> - A Backbone app that displays proper ratios for espresso drinks. This app combines my love of coffee with my love of code. Though without a backend, the app looks pretty cool (to me anyway). Take a look. <a href="http://github.com/aboutaaron/proper-coffee">Source on Github</a>.</p></li>
+<li><p><a href="http://firescraper.herokuapp.com"><strong>Firescraper</strong></a> - Rails app that tracks wildfires in California. Built with Rails, Mechanize, Sass, d3.js and leaflet. Deployed for <em>$Free.99</em> on Heroku. This app uses rake tasks to scrape the <a href="http://www.fire.ca.gov/">CAL-FIRE</a> website and build a basic API out of the page. I'm currently refactoring this code and plan to relaunch soon with fires from 2013. <a href="http://github.com/aboutaaron/fire-scraper">Source on Github</a>.</p></li>
+<li><p><strong>ClearCache.js</strong> - Bookmarklet to clear page cache. Mostly used by me for production speed at <a href="http://latimes.com">Los Angeles Times</a>. Drag to your browser's bookmark bar and click on it to ... <em>clear the cache.</em> Click on it here for a demo <strong>>></strong> <a href="javascript:(function(){document.body.appendChild(document.createElement('script')).src='http://aboutaaron.com/js/clearcache.js';})();" class="btn btn-mini">Drag this</a></p></li>
+<li><p><strong>Event Calendar</strong> - I was asked by Times Entertainment staff to build a calendar that staff and readers could use to keep track of upcoming award show events. I took this opportunity to build something with <a href="http://builtbybalance.com/Tabletop/">Tabletop.js</a>. Since the app is powered by a Google Doc spreadsheet, web producers and reporters alike — or really anyone who can update an Excel spreadsheet — can update the app. I've recently begun porting the app over to use the Times' spreadsheet tool <a href="http://spreadsheets.latimes.com">spreadsheets.latimes.com</a>. Link coming soon.</p></li>
+<li><p><strong>Box Office</strong> - I wrote a small Sinatra app that generates interactive charts based on weekend domestic box office estimates. The final chart is embedded within the Sunday box office story written by Times' Company Town reporters (<a href="http://www.latimes.com/entertainment/envelope/cotown/la-et-ct-box-office-jack-giant-slayer-20130303,0,682372.story">example</a>). The app uses Miso Dataset, Highcharts and Amazon S3.</p></li>
+<li><p><a href="http://about.tagged.com"><strong>Tagged Corporate Site</strong></a> - While working as a marketing intern for <a href="http://tagged.com">Tagged, Inc</a>, I was asked if I wanted to take a stab at redesiging their aging corporate page. I worked with the design firm <a href="http://rh-dg.com/">RHDG</a> on the look and feel of the site. From there, I took their PSD files and used the excellent <a href="http://www.rootstheme.com/">Roots WordPress framework</a> to bring the designs to the web. This was my first forary into client web work.</p></li>
+<li><p><a href="http://goldengatexpress.org"><strong>The Golden Gate Xpress</strong></a> - My college pet project. The redesign of the San Francisco State University platform. Uses WordPress and a bunch of other nifty stuff.</p></li>
 </ul>
 
-<h3 id="writing">Writing</h3>
+
+<h3>Writing</h3>
 
 <ul>
-  <li>
-    <p><strong>Los Angeles Times</strong> <a href="http://herocomplex.latimes.com/2012/12/06/god-of-war-ascension-director-touts-games-combat-feel/#/0">‘God of War: Ascension’: Director touts game’s combat feel</a></p>
-  </li>
-  <li>
-    <p><strong>Los Angeles Times</strong> <a href="http://herocomplex.latimes.com/2012/11/20/playstation-all-stars-battle-royale/#/0">‘PlayStation All-Stars: Battle Royale’: Chan Park talks classics</a></p>
-  </li>
-  <li>
-    <p><strong>Los Angeles Times</strong> <a href="http://www.latimes.com/entertainment/music/posts/la-et-ms-nas-from-illmatic-to-life-is-good,0,7598817.photogallery">From ‘Illmatic’ to ‘Life is Good:’ A look at Nas’ career</a></p>
-  </li>
-  <li>
-    <p><strong>New York Times Student Journalism Institute</strong> <a href="http://nola11.nytimes-institute.com/2011/05/24/state-wants-diners-to-know-how-clean-their-plates-are/">State Wants Diners to Know How Clean Their Plates Are</a></p>
-  </li>
+<li><p><strong>Los Angeles Times</strong> <a href="http://herocomplex.latimes.com/2012/12/06/god-of-war-ascension-director-touts-games-combat-feel/#/0">'God of War: Ascension': Director touts game's combat feel</a></p></li>
+<li><p><strong>Los Angeles Times</strong> <a href="http://herocomplex.latimes.com/2012/11/20/playstation-all-stars-battle-royale/#/0">'PlayStation All-Stars: Battle Royale': Chan Park talks classics</a></p></li>
+<li><p><strong>Los Angeles Times</strong> <a href="http://www.latimes.com/entertainment/music/posts/la-et-ms-nas-from-illmatic-to-life-is-good,0,7598817.photogallery">From 'Illmatic' to 'Life is Good:' A look at Nas' career</a></p></li>
+<li><p><strong>New York Times Student Journalism Institute</strong> <a href="http://nola11.nytimes-institute.com/2011/05/24/state-wants-diners-to-know-how-clean-their-plates-are/">State Wants Diners to Know How Clean Their Plates Are</a></p></li>
 </ul>
+
 
 <p><em>The following articles were published in print only and thus do not have online records. I stored them in <a href="https://gist.github.com/">Gist</a> for safe keeping.</em></p>
 
 <ul>
-  <li>
-    <p><strong>Ingleside Light</strong> <a href="https://gist.github.com/1491113#file-cayuga_aaronwilliams-markdown">Cayuga Park in San Francisco sees future renovation</a></p>
-  </li>
-  <li>
-    <p><strong>Ingleside Light</strong> <a href="https://gist.github.com/1491113#file-peterv_aaronwilliams-markdown">Peter Vaernet: Guardian of Brooks Park</a></p>
-  </li>
-  <li>
-    <p><strong>Newswire21</strong> <a href="https://gist.github.com/1491113#file-nert_aaronwilliams-markdown">City Restarts Emergency Training in Ingleside</a></p>
-  </li>
-  <li>
-    <p><strong>Newswire21</strong> <a href="https://gist.github.com/1491113#file-quake_aaronwilliams-markdown">Study Predicts Damage to Southern SF Homes in Quake</a></p>
-  </li>
-  <li>
-    <p><strong>Newswire21</strong> <a href="https://gist.github.com/1491113#file-safety_aaronwilliams-markdown">1 in 4 Southeast SF Residents Feel Unsafe in Daylight</a></p>
-  </li>
+<li><p><strong>Ingleside Light</strong> <a href="https://gist.github.com/1491113#file-cayuga_aaronwilliams-markdown">Cayuga Park in San Francisco sees future renovation</a></p></li>
+<li><p><strong>Ingleside Light</strong> <a href="https://gist.github.com/1491113#file-peterv_aaronwilliams-markdown">Peter Vaernet: Guardian of Brooks Park</a></p></li>
+<li><p><strong>Newswire21</strong> <a href="https://gist.github.com/1491113#file-nert_aaronwilliams-markdown">City Restarts Emergency Training in Ingleside</a></p></li>
+<li><p><strong>Newswire21</strong> <a href="https://gist.github.com/1491113#file-quake_aaronwilliams-markdown">Study Predicts Damage to Southern SF Homes in Quake</a></p></li>
+<li><p><strong>Newswire21</strong> <a href="https://gist.github.com/1491113#file-safety_aaronwilliams-markdown">1 in 4 Southeast SF Residents Feel Unsafe in Daylight</a></p></li>
 </ul>
 
-<h3 id="audiovideo">Audio/Video</h3>
+
+<h3>Audio/Video</h3>
 
 <ul>
-  <li><a href="http://xpress.sfsu.edu/j395/aaron/publish_to_web/"><strong>The Ingleside food bank</strong></a> Audio Slideshow</li>
-  <li><a href="http://xpress.sfsu.edu/specials/2010f/BECA/fp/qt_embed.html"><strong>Profile on SFSU Broadcast Dept</strong></a> Photo &amp; Video</li>
+<li><a href="http://xpress.sfsu.edu/j395/aaron/publish_to_web/"><strong>The Ingleside food bank</strong></a> Audio Slideshow</li>
+<li><a href="http://xpress.sfsu.edu/specials/2010f/BECA/fp/qt_embed.html"><strong>Profile on SFSU Broadcast Dept</strong></a> Photo &amp; Video</li>
 </ul>
-</section>
-</article>
-                </section>
-            </div>
-            <div class="span3 offset1" id="rail">
-                <a title="Return home why don't you?" id="masthead" href="/">
-                    <img id="logo" src="/img/upgrade.png" alt="Me as a child.">
-                </a>
-                <p class="nav-header">I'm Aaron Colby Williams and I <strong>write&amp;code</strong> for fun, journalism and profit.</p>
-                <ul class="nav nav-list">
-                    <li><a title="Some of my recent work." href="/projects.html"><i class="icon-heart"></i> Projects</a></li>
 
-                    <li><a title="My open source code on Github." href="http://github.com/aboutaaron"><i class="icon-github"></i> Code</a></li>
 
-                    <li><a title="Learn a little bit more about me." href="/about.html"><i class="icon-book"></i> About</a></li>
+            </section>
+        </section>
 
-                    <li id="social-icons">
-                        <a title="Follow me on Twitter" href="http://twitter.com/aboutaaron">
-                            <i class="icon-twitter"></i></a>
-                        <a title="Connect with me on LinkedIn" href="http://www.linkedin.com/in/aboutaaron">
-                            <i class="icon-linkedin"></i></a>
-                        <a title="You actually use this?" href="https://plus.google.com/u/0/117735527632553483113/posts">
-                            <i class="icon-google-plus"></i></a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="row">
-            <div class="span12">
-                <footer>
-                    <p class="footer">Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a> | Made with love in <a href="http://www.youtube.com/watch?v=FWOsbGP5Ox4"><span class="stateface stateface-replace stateface-ca">California</span></a> | <a class="visible-desktop" title="Just how deep does the rabbit hole go?" href="#" id="easter-egg">?</a></p>
-                </footer>
-            </div>
-        </div>
-    </div>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-    <script type="text/javascript" src="/js/jquery.box2d.min.js"></script>
-
-    <script type="text/javascript">
-
-        // box2d
-        $(document).ready(function() {
-            $("#easter-egg").click(function() {
-                $("#logo, i").box2d({'y-velocity':5});
-            });
+        <script>
+          $(document).ready(function() {
+            // Stuff to do as soon as the DOM is ready;
+            var _gaq=[['_setAccount','UA-28341748-1'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
           });
-        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-        var disqus_shortname = 'aboutaaron'; // required: replace example with your forum shortname
-
-        /* * * DON'T EDIT BELOW THIS LINE * * */
-        (function () {
-            var s = document.createElement('script'); s.async = true;
-            s.type = 'text/javascript';
-            s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
-            (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-        }());
-    </script>
-
-    <!-- GOOGLE ANALYTICS -->
-    <script type="text/javascript">
-        var _gaq = _gaq || [];
-        _gaq.push(['_setAccount', 'UA-28341748-1']);
-        _gaq.push(['_trackPageview']);
-        (function() {
-            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-        })();
-    </script>
-
+        </script>
     </body>
 </html>

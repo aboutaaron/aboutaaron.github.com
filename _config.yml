@@ -1,3 +1,9 @@
-auto: true
 pygments: true
-markdown: kramdown
+markdown: rdiscount
+
+name: Aaron Williams
+description: A site about nothing
+url: http://aboutaaron.com
+
+auto: true
+server: true
