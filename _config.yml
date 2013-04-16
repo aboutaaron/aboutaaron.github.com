@@ -1,5 +1,5 @@
 pygments: true
-markdown: maruku
+markdown: rdiscount
 
 name: Aaron Williams
 description: A site about nothing
