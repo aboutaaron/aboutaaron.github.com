@@ -1,0 +1,38 @@
+// I gather this file is a starting point for the project.
+@import "bootstrap";
+
+// Include responsive Bootstrap styles
+@import "bootstrap-responsive";
+
+// Para yo
+
+html { overflow-y: scroll; }
+
+body {
+    background: url(http://static.tumblr.com/0otjmbo/467ml8p53/__tyrannosaurus_rex___by_gastrolito.jpg) top 90px right no-repeat;
+    background-attachment: fixed;
+
+    border-top: 5px solid #D92929;
+
+    font-family: 'Lora', serif;
+    font-size: 16px;
+}
+
+ul {
+    //@extend .unstyled;
+
+    li a {
+        color: $black;
+        text-decoration: underline;
+    }
+}
+
+#logo {
+    margin-top: 20px;
+
+    &:active {
+        position: relative;
+        top: 2px;
+    }
+}
+
