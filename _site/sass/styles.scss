@@ -12,10 +12,10 @@ body {
     background: url(http://static.tumblr.com/0otjmbo/467ml8p53/__tyrannosaurus_rex___by_gastrolito.jpg) top 90px right no-repeat;
     background-attachment: fixed;
 
+    border-top: 5px solid #D92929;
+
     font-family: 'Lora', serif;
     font-size: 16px;
-
-    margin-top: 20px;
 }
 
 ul {
@@ -28,6 +28,8 @@ ul {
 }
 
 #logo {
+    margin-top: 20px;
+
     &:active {
         position: relative;
         top: 2px;

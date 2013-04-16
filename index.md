@@ -1,5 +1,6 @@
 ---
 layout: default
+title: Home
 ---
 
 Aaron is a web developer and journalist currently in Los Angeles.
