@@ -3,9 +3,9 @@ layout: default
 title: Projects
 ---
 
-### Code
+### Projects
 
-* [__The SF Appeal__](http://sfappeal.com) - I worked and with long time friend and Appeal founder Eve Batey to bring her online newspaper into 2013. Taking a WordPress theme template, we gutted it and made something that I personally think looks pretty sweet.
+* [__The SF Appeal__](http://sfappeal.com) - I worked with long time friend and Appeal founder Eve Batey to bring her online newspaper into 2013. Taking a WordPress theme template, we gutted it and made something that I personally think looks pretty sweet.
 
 * [__Proper Coffee__](http://aboutaaron.com/proper-coffee) - A Backbone app that displays proper ratios for espresso drinks. This app combines my love of coffee with my love of code. Though without a backend, the app looks pretty cool (to me anyway). Take a look. [Source on Github](http://github.com/aboutaaron/proper-coffee).
 
@@ -13,9 +13,9 @@ title: Projects
 
 * __ClearCache.js__ - Bookmarklet to clear page cache. Mostly used by me for production speed at [Los Angeles Times](http://latimes.com). Drag to your browser's bookmark bar and click on it to ... *clear the cache.* Click on it here for a demo __>>__ <a href="javascript:(function(){document.body.appendChild(document.createElement('script')).src='http://aboutaaron.com/js/clearcache.js';})();" class="btn btn-mini">Drag this</a>
 
-* __Event Calendar__ - I was asked by Times Entertainment staff to build a calendar that staff and readers could use to keep track of upcoming award show events. I took this opportunity to build something with [Tabletop.js](http://builtbybalance.com/Tabletop/). Since the app is powered by a Google Doc spreadsheet, web producers and reporters alike — or really anyone who can update an Excel spreadsheet — can update the app. I've recently begun porting the app over to use the Times' spreadsheet tool [spreadsheets.latimes.com](http://spreadsheets.latimes.com). Link coming soon.
+* __Event Calendar__ - I was asked by Times Entertainment staff to build a calendar that staff and readers could use to keep track of upcoming award show events. I took this opportunity to build something with [Tabletop.js](http://builtbybalance.com/Tabletop/). Since the app is powered by a Google Doc spreadsheet, web producers and reporters alike — or really anyone who can update an Excel spreadsheet — can update the app. I've recently begun porting the app over to use the [Times' spreadsheet tool](http://spreadsheets.latimes.com). [Source on Github](http://github.com/aboutaaron/awards-calendar)
 
-* __Box Office__ - I wrote a small Sinatra app that generates interactive charts based on weekend domestic box office estimates. The final chart is embedded within the Sunday box office story written by Times' Company Town reporters ([example](http://www.latimes.com/entertainment/envelope/cotown/la-et-ct-box-office-jack-giant-slayer-20130303,0,682372.story)). The app uses Miso Dataset, Highcharts and Amazon S3.
+* __Box Office__ - I wrote a small Sinatra app that generates interactive charts based on weekend domestic box office estimates. The final chart is embedded within the Sunday box office story written by Times' Company Town reporters ([example](http://www.latimes.com/entertainment/envelope/cotown/la-et-ct-box-office-jack-giant-slayer-20130303,0,682372.story)). The app uses Miso Dataset, Highcharts and Amazon S3. [Source on Github](http://github.com/aboutaaron/boxoffice).
 
 * [__Tagged Corporate Site__](http://about.tagged.com) - While working as a marketing intern for [Tagged, Inc](http://tagged.com), I was asked if I wanted to take a stab at redesiging their aging corporate page. I worked with the design firm [RHDG](http://rh-dg.com/) on the look and feel of the site. From there, I took their PSD files and used the excellent [Roots WordPress framework](http://www.rootstheme.com/) to bring the designs to the web. This was my first forary into client web work.
 
