@@ -3,7 +3,7 @@ layout: default
 title: About
 ---
 
-I started programming seriously around two years ago thinking I'd never get this far. Calling myself a "web developer" seemed like a distant dream back then. And yet, through perserverance — and a lot of coffee — I think I've done pretty well for myself.
+I started programming seriously around two years ago thinking I'd never get this far. Calling myself a "web developer" seemed like a distant dream back then. And yet, through perseverance — and a lot of coffee — I think I've done pretty well for myself.
 
 I like JavaScript, Ruby, Object-oriented practices and HTML prototypes. I don't know if I fancy myself a frontend or backend dev. **I just like to code.**
 
