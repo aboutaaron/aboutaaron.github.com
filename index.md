@@ -3,7 +3,7 @@ layout: default
 title: Home
 ---
 
-Aaron is a web developer and journalist currently in Los Angeles.
+Aaron is a web developer and journalist.
 
 * [Projects](/projects.html)
 * [Github](http://github.com/aboutaaron)
