@@ -29,6 +29,8 @@ ul {
 
 #logo {
     margin-top: 20px;
+    //clip: circle(100, 50, 40);
+    border-radius: 200px;
 
     &:active {
         position: relative;
