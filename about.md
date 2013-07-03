@@ -25,7 +25,7 @@ This site is powered by the following technologies:
 * [Github Pages](http://pages.github.com/)
 
 #### Design
-For this site redesign, I wanted something simple, yet functional. I moved the blogging feature off to [Tumblr](http://blog.aboutaaron.com), gutted Bootstrap's Less files for the Sass variant and began asking myself, "What represents *me*?" What's left is a site that's easy to maintain and a breeze to update. Also, dinosuars!
+For this site design, I wanted something simple, yet functional. I moved the blogging feature off to [Tumblr](http://blog.aboutaaron.com), gutted Bootstrap's Less files for the Sass variant and began asking myself, "What represents *me*?" What's left is a site that's easy to maintain and a breeze to update. Also, dinosuars!
 
 Special thanks to:
 
