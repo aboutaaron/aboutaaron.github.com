@@ -5,9 +5,9 @@ title: About
 
 I started programming seriously around two years ago thinking I'd never get this far. Calling myself a "web developer" seemed like a distant dream back then. And yet, through perseverance — and a lot of coffee — I think I've done pretty well for myself.
 
-I like JavaScript, Ruby, Object-oriented practices and HTML prototypes. I don't know if I fancy myself a frontend or backend dev. **I just like to code.**
+I like JavaScript, Ruby and really all things programming. I don't know if I fancy myself a frontend or backend dev. **I just like to code.**
 
-I'm a Bay Area native currently residing in Los Angeles. I quite enjoy coffee, hip-hop and my excellent girlfriend.
+I'm Bay Area-based and I quite enjoy coffee, hip-hop and my excellent girlfriend.
 
 Want to learn more? Visit my [Github](http://github/aboutaaron), follow me [Twitter](http://twitter.com/aboutaaron), or say hello — **aaron** [at] this domain [dot] com
 
@@ -28,7 +28,7 @@ For this site redesign, I wanted something simple, yet functional. I moved the b
 
 Special thanks to:
 
-* [Mark Otto](http://markdotto.com/) - Mark built Bootstrap. This site is built with Booststrap. Nuff said.
+* [Mark Otto](http://markdotto.com/) - Mark built Bootstrap. This site is built with Bootstrap. Nuff said.
 
 * [Beta Prime](http://betaprime.tumblr.com) - I took [Evan Walsh's](http://evanwalsh.net/) simplistic Tumblr theme and rehauled it for [my blog](http://blog.aboutaaron.com). The aesthetic carried over to this site.
 
