@@ -9,7 +9,7 @@ I like JavaScript, Ruby and really all things programming. I don't know if I fan
 
 I'm Bay Area-based and I quite enjoy coffee, hip-hop and my excellent girlfriend.
 
-Want to learn more? Visit my [Github](http://github/aboutaaron), follow me [Twitter](http://twitter.com/aboutaaron), look at my [resume](http://resume.linkedinlabs.com/z3wen348n) or say hello — **aaron** [at] this domain [dot] com
+Want to learn more? Visit my [Github](http://github/aboutaaron), follow me [Twitter](http://twitter.com/aboutaaron), look at my [resume](http://resume.linkedinlabs.com/z3wen348n) or say hello — **aaron** [at] this domain.
 
 
 ### Colophon
