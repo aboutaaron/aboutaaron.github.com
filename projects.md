@@ -7,13 +7,11 @@ title: Projects
 
 * [__The SF Appeal__](http://sfappeal.com) - I worked with long time friend and Appeal founder Eve Batey to bring her online newspaper into 2013. Taking a WordPress theme template, we gutted it and made something that I personally think looks pretty sweet.
 
+* [__Firescraper__](http://firescraper.herokuapp.com) - Rails app that tracks wildfires in California. Built with Rails, Mechanize, Sass, d3.js and leaflet. Deployed for *$Free.99* on Heroku. This app uses rake tasks to scrape the [CAL-FIRE](http://www.fire.ca.gov/) website and build a basic app out of the page. I'm currently rebuilding this app to be awesome. More to come in August 2013. [Source on Github](http://github.com/aboutaaron/fire-scraper).
+
 * [__Proper Coffee__](http://aboutaaron.com/proper-coffee) - A Backbone app that displays proper ratios for espresso drinks. This app combines my love of coffee with my love of code. Though without a backend, the app looks pretty cool (to me anyway). Take a look. [Source on Github](http://github.com/aboutaaron/proper-coffee).
 
-* [__Firescraper__](http://firescraper.herokuapp.com) - Rails app that tracks wildfires in California. Built with Rails, Mechanize, Sass, d3.js and leaflet. Deployed for *$Free.99* on Heroku. This app uses rake tasks to scrape the [CAL-FIRE](http://www.fire.ca.gov/) website and build a basic API out of the page. I'm currently refactoring this code and plan to relaunch soon with fires from 2013. [Source on Github](http://github.com/aboutaaron/fire-scraper).
-
 * __ClearCache.js__ - Bookmarklet to clear page cache. Mostly used by me for production speed at [Los Angeles Times](http://latimes.com). Drag to your browser's bookmark bar and click on it to ... *clear the cache.* Click on it here for a demo __>>__ <a href="javascript:(function(){document.body.appendChild(document.createElement('script')).src='http://aboutaaron.com/js/clearcache.js';})();" class="btn btn-mini">Drag this</a>
-
-* __Event Calendar__ - I was asked by Times Entertainment staff to build a calendar that staff and readers could use to keep track of upcoming award show events. I took this opportunity to build something with [Tabletop.js](http://builtbybalance.com/Tabletop/). Since the app is powered by a Google Doc spreadsheet, web producers and reporters alike — or really anyone who can update an Excel spreadsheet — can update the app. I've recently begun porting the app over to use the [Times' spreadsheet tool](http://spreadsheets.latimes.com). [Source on Github](http://github.com/aboutaaron/awards-calendar)
 
 * __Box Office__ - I wrote a small Sinatra app that generates interactive charts based on weekend domestic box office estimates. The final chart is embedded within the Sunday box office story written by Times' Company Town reporters ([example](http://www.latimes.com/entertainment/envelope/cotown/la-et-ct-box-office-jack-giant-slayer-20130303,0,682372.story)). The app uses Miso Dataset, Highcharts and Amazon S3. [Source on Github](http://github.com/aboutaaron/boxoffice).
 
