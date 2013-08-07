@@ -5,9 +5,11 @@ title: Projects
 
 ### Projects
 
-* [__The SF Appeal__](http://sfappeal.com) - I worked with long time friend and Appeal founder Eve Batey to bring her online newspaper into 2013. Taking a WordPress theme template, we gutted it and made something that I personally think looks pretty sweet.
+* [__Fuego__](http://aboutaaron.com/fuego) - I built a [Rails-powered API](http://calfire-api.herokuapp.com) that scrapes California wildfire data and creates a JSON API of fires by county. I then built a JavaScript frontend called "Fuego" that consumes the API and maps the results. [Fuego source](https://github.com/aboutaaron/fuego/tree/topojson) | [Calfire JSON API source](https://github.com/aboutaaron/fire-scraper/tree/api). *DISCLAIMER*: This is still in *active* development so excuse my mess.
 
-* [__Firescraper__](http://firescraper.herokuapp.com) - Rails app that tracks wildfires in California. Built with Rails, Mechanize, Sass, d3.js and leaflet. Deployed for *$Free.99* on Heroku. This app uses rake tasks to scrape the [CAL-FIRE](http://www.fire.ca.gov/) website and build a basic app out of the page. I'm currently rebuilding this app to be awesome. More to come in August 2013. [Source on Github](http://github.com/aboutaaron/fire-scraper).
+* [__Gastown__](http://aboutaaron.com/gastown) - While visiting Vancouver, BC, I found a data set of rental properties in the city that have five or more bylaw issues. I decided to map the data but with a twist: The app purely relies on the CSV provided by the city government. Rather than store the data in a database, I used Miso Dataset to call the CSV into the client and map from there. This was an experiment in quick hit data mapping, i.e., building a news tool that relies on the browser. As always, [source on Github](http://github.com/aboutaaron/gastown).
+
+* [__The SF Appeal__](http://sfappeal.com) - I worked with long time friend and Appeal founder Eve Batey to bring her online newspaper into 2013. Taking a WordPress theme template, we gutted it and made something that I personally think looks pretty sweet.
 
 * [__Proper Coffee__](http://aboutaaron.com/proper-coffee) - A Backbone app that displays proper ratios for espresso drinks. This app combines my love of coffee with my love of code. Though without a backend, the app looks pretty cool (to me anyway). Take a look. [Source on Github](http://github.com/aboutaaron/proper-coffee).
 
