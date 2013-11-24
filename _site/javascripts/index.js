@@ -46,8 +46,8 @@
 			var camera, scene, renderer, particles, geometry, materials = [], parameters, i, h, color;
 			var mouseX = 0, mouseY = 0;
 
-			var height = ($('#site-head').height() / 1.5);
-			var windowHalfX = $('#site-head').width() / 2;
+			var height = 350;
+			var windowHalfX = height / 2;
 			var windowHalfY = height / 2;
 
 			init();

@@ -109,6 +109,7 @@ body {
   font-size: 2.0rem;
   line-height: 1.65em;
   color: $black;
+  overflow-y: hidden;
 }
 
 ::-moz-selection, ::selection {
@@ -389,6 +390,10 @@ tbody > tr:nth-child(odd) > th {
    4. General - The main styles for the the theme
    ========================================================================== */
 
+.content {
+  margin-top: -3rem;
+}
+
 /* Big cover image on the home page */
 
 #site-head {
@@ -396,7 +401,7 @@ tbody > tr:nth-child(odd) > th {
   display: table;
   width: 100%;
   height: 60%;
-  margin-bottom: 5rem;
+  //margin-bottom: 5rem;
   text-align: center;
   color: #fff;
   background: $white no-repeat center center;
