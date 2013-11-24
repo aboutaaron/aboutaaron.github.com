@@ -3,39 +3,13 @@ layout: default
 title: About
 ---
 
-I started programming seriously around two years ago thinking I'd never get this far. Calling myself a "web developer" seemed like a distant dream back then. And yet, through perseverance — and a lot of coffee — I think I've done pretty well for myself.
+# About
 
-I like JavaScript, Ruby and really all things programming. I don't know if I fancy myself a frontend or backend dev. **I just like to code.**
-
-I'm Bay Area-based and I quite enjoy coffee, hip-hop and my excellent girlfriend.
+Aaron Williams is a professional web developer and journalist who specializes in front-end development, digital cartography and data visualization. He currently works as a news application developer at the Center for Investigative Reporting. He previously served as a web producer for the Los Angeles Times.
 
 Want to learn more? Visit my [Github](http://github/aboutaaron), follow me [Twitter](http://twitter.com/aboutaaron), look at my [resume](http://resume.linkedinlabs.com/z3wen348n) or say hello — **aaron** [at] this domain.
 
 
-### Colophon
+#### Colophon
 
-This site is powered by the following technologies:
-
-* [Lora](http://google.com/webfonts)
-
-* [Jekyll](http://jekyllrb.com/)
-
-* [Bootstrap](http://twitter.github.com/bootstrap)
-
-* [Github Pages](http://pages.github.com/)
-
-#### Design
-For this site design, I wanted something simple, yet functional. I moved the blogging feature off to [Tumblr](http://blog.aboutaaron.com), gutted Bootstrap's Less files for the Sass variant and began asking myself, "What represents *me*?" What's left is a site that's easy to maintain and a breeze to update. Also, dinosuars!
-
-Special thanks to:
-
-* [Mark Otto](http://markdotto.com/) - Mark built Bootstrap. This site is built with Bootstrap. Nuff said.
-
-* [Beta Prime](http://betaprime.tumblr.com) - I took [Evan Walsh's](http://evanwalsh.net/) simplistic Tumblr theme and rehauled it for [my blog](http://blog.aboutaaron.com). The aesthetic carried over to this site.
-
-* [Marco Arment](http://www.marco.org/) - Marco's fanstastic website inspired the simple-but-focused look to my web presence.
-
-* [Troy Eric Griggs](http://troyericgriggs.com/) - Troy, my fusion dance compadre, is a New York-based designer and web developer currently working for the New York Times. He's also a kick ass designer. Hire him.
-
-* [Gastrolito](http://gastrolito.deviantart.com/art/quot-Tyrannosaurus-rex-quot-72353695) - He drew the dinosaur.
-
+Aboutaaron.com is hosted on Github Pages. The design is called "Banquo" and is a fork of "Casper," the default theme for Ghost.org. Typography and page structure is inspired by Information Architects. The font is Merriweather hosted by Google Fonts. The particle system is adapted from Mr. Doob's demo on the Three.js homepage.

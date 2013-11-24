@@ -569,7 +569,7 @@ tbody > tr:nth-child(odd) > th {
   text-align: center;
 }
 
-.post-content ul {
+.post-content .nav {
   display: -webkit-flex;
   display: flex;
   -webkit-flex-direction: row;
@@ -905,6 +905,9 @@ tbody > tr:nth-child(odd) > th {
    ========================================================================== */
 
 @media only screen and (max-width: 500px) {
+  .post-content .nav li {
+    margin: 0;
+  }
   #blog-logo img {
     max-height: 80px;
   }
