@@ -46,8 +46,9 @@
 			var camera, scene, renderer, particles, geometry, materials = [], parameters, i, h, color;
 			var mouseX = 0, mouseY = 0;
 
+			var height = ($('#site-head').height() / 1.5);
 			var windowHalfX = $('#site-head').width() / 2;
-			var windowHalfY = $('#site-head').height() / 2;
+			var windowHalfY = height / 2;
 
 			init();
 			animate();
@@ -56,11 +57,11 @@
 
 				container = document.querySelector('#site-head');
 
-				camera = new THREE.PerspectiveCamera( 75, $('#site-head').width() / $('#site-head').height(), 1, 3000 );
+				camera = new THREE.PerspectiveCamera( 75, $('#site-head').width() / height, 1, 3000 );
 				camera.position.z = 1000;
 
 				scene = new THREE.Scene();
-				scene.fog = new THREE.FogExp2( 0xffffff, 0.0007 );
+				scene.fog = new THREE.FogExp2( 0x000000, 0.0007 );
 
 				geometry = new THREE.Geometry();
 
@@ -101,8 +102,8 @@
 				}
 
 				renderer = new THREE.WebGLRenderer();
-				renderer.setSize( $('#site-head').width(), $('#site-head').height() );
-				renderer.setClearColorHex( 0xffffff, 1 );
+				renderer.setSize( $('#site-head').width(), height);
+				renderer.setClearColorHex( 0x000000, 1 );
 				container.appendChild( renderer.domElement );
 				$('canvas').addClass('three-js');
 
@@ -114,12 +115,12 @@
 			function onWindowResize() {
 
 				windowHalfX = $('#site-head').width() / 2;
-				windowHalfY = $('#site-head').height() / 2;
+				windowHalfY = height / 2;
 
-				camera.aspect = $('#site-head').width() / $('#site-head').height();
+				camera.aspect = $('#site-head').width() / height;
 				camera.updateProjectionMatrix();
 
-				renderer.setSize( $('#site-head').width(), $('#site-head').height() );
+				renderer.setSize( $('#site-head').width(), height);
 
 			}
 
