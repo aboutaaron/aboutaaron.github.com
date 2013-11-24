@@ -28,27 +28,30 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <link rel="shortcut icon" href="/images/favicon.ico">
-        <link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="stylesheets/styles.css">
+            <link href='//fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="//127.0.0.1:2368/assets/css/screen.css">
     </head>
     <body>
-        <!--[if lt IE 7]>
+        <!--[if lt IE 10]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
 
-        <header class="container">
-            <section class="span4">
-                    <a href="/" title="Go back home">
-                        <img id="logo" src="http://gravatar.com/avatar/821e34ba1be557547dd449463ddf4d24?s=600" alt="Welcome to Aaron's website">
-                    </a>
-                    <h1>aboutaaron.com</h1>
-            </section>
-        </header>
+<body class="home-template">
 
 
-        <section class="container" id="main">
-            <section class="span4">
-                <h3>Projects</h3>
+  <header id="site-head">
+      <div class="vertical">
+          <div id="site-head-content" class="inner">
+              <a id="blog-logo" href="http://127.0.0.1:2368/"><img src="http://gravatar.com/avatar/821e34ba1be557547dd449463ddf4d24?s=600" alt="Blog Logo"></a>
+              <h1 class="blog-title">Aaron Williams</h1>
+              <h2 class="blog-description">web developer and journalist</h2>
+          </div>
+      </div>
+  </header>
+  <main class="content" role="main">
+    <article class="post">
+      <section class="post-content">
+        <h3>Projects</h3>
 
 <ul>
 <li><p><a href="http://aboutaaron.com/fuego"><strong>Fuego</strong></a> - I built a <a href="http://calfire-api.herokuapp.com">Rails-powered API</a> that scrapes California wildfire data and creates a JSON API of fires by county. I then built a JavaScript frontend called "Fuego" that consumes the API and maps the results. <a href="https://github.com/aboutaaron/fuego/tree/topojson">Fuego source</a> | <a href="https://github.com/aboutaaron/fire-scraper/tree/api">Calfire JSON API source</a>. <em>DISCLAIMER</em>: This is still in <em>active</em> development so excuse my mess.</p></li>
@@ -91,19 +94,28 @@
 </ul>
 
 
-            </section>
-        </section>
+      </section>
+    </article>
+  </main>
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-
-        <script>
-          $(document).ready(function() {
-            // Stuff to do as soon as the DOM is ready;
-            var _gaq=[['_setAccount','UA-28341748-1'],['_trackPageview']];
-            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-            s.parentNode.insertBefore(g,s)}(document,'script'));
-          });
-        </script>
-    </body>
+<!--   <footer class="site-footer">
+      <a class="subscribe icon-feed" href="http://127.0.0.1:2368/rss/"><span class="tooltip">Subscribe!</span></a>
+      <div class="inner">
+           <section class="copyright">All content copyright <a href="/">Aaron Williams</a> © 2013 • All rights reserved.</section>
+           <section class="poweredby">Proudly published with <a class="icon-ghost" href="http://ghost.org">Ghost</a></section>
+      </div>
+  </footer> -->
+  <script src="http://127.0.0.1:2368/shared/vendor/jquery/jquery.js"></script>
+  <script src="http://127.0.0.1:2368/assets/js/threejs/build/three.min.js"></script>
+  <script src="/javascripts/index.js"></script>
+  <script>
+    $(document).ready(function() {
+      // Stuff to do as soon as the DOM is ready;
+      var _gaq=[['_setAccount','UA-28341748-1'],['_trackPageview']];
+      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+      g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+      s.parentNode.insertBefore(g,s)}(document,'script'));
+    });
+  </script>
+  </body>
 </html>
