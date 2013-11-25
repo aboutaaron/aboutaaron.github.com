@@ -60,7 +60,7 @@
 				camera.position.z = 1000;
 
 				scene = new THREE.Scene();
-				scene.fog = new THREE.FogExp2( 0xffffff, 0.0007 );
+				scene.fog = new THREE.FogExp2( 0x000000, 0.0007 );
 
 				geometry = new THREE.Geometry();
 
@@ -102,7 +102,7 @@
 
 				renderer = new THREE.WebGLRenderer();
 				renderer.setSize( $('#site-head').width(), $('#site-head').height() );
-				renderer.setClearColorHex( 0xffffff, 1 );
+				renderer.setClearColorHex( 0x000000, 1 );
 				container.appendChild( renderer.domElement );
 				$('canvas').addClass('three-js');
 
