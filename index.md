@@ -3,9 +3,11 @@ layout: default
 title: Home
 ---
 
-Aaron is a web developer and journalist.
+# Aaron Williams is a web developer and journalist
 
-* [Projects](/projects.html)
-* [Github](http://github.com/aboutaaron)
-* [About](/about.html)
-* [Blog](http://blog.aboutaaron.com)
+<ul class="nav">
+	<li><a href="/projects.html">Projects</a></li>
+	<li><a href="http://github.com/aboutaaron">Github</a></li>
+	<li><a href="/about.html">About</a></li>
+	<li><a href="http://blog.aboutaaron.com">Blog</a></li>
+</ul>

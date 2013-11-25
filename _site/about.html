@@ -28,74 +28,52 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <link rel="shortcut icon" href="/images/favicon.ico">
-        <link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="stylesheets/styles.css">
+            <link href='//fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="/stylesheets/styles.css">
     </head>
     <body>
-        <!--[if lt IE 7]>
+        <!--[if lt IE 10]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
 
-        <header class="container">
-            <section class="span4">
-                    <a href="/" title="Go back home">
-                        <img id="logo" src="http://gravatar.com/avatar/821e34ba1be557547dd449463ddf4d24?s=600" alt="Welcome to Aaron's website">
-                    </a>
-                    <h1>aboutaaron.com</h1>
-            </section>
-        </header>
+<body class="home-template">
 
 
-        <section class="container" id="main">
-            <section class="span4">
-                <p>I started programming seriously around two years ago thinking I'd never get this far. Calling myself a "web developer" seemed like a distant dream back then. And yet, through perseverance — and a lot of coffee — I think I've done pretty well for myself.</p>
+  <header id="site-head">
+      <div class="vertical">
+          <div id="site-head-content" class="inner">
+              <a id="blog-logo" href="/"><img src="//secure.gravatar.com/avatar/821e34ba1be557547dd449463ddf4d24?s=600" alt="Blog Logo"></a>
+          </div>
+      </div>
+  </header>
+  <main class="content" role="main">
+    <article class="post">
+      <section class="post-content">
+        <h1>About</h1>
 
-<p>I like JavaScript, Ruby and really all things programming. I don't know if I fancy myself a frontend or backend dev. <strong>I just like to code.</strong></p>
-
-<p>I'm Bay Area-based and I quite enjoy coffee, hip-hop and my excellent girlfriend.</p>
+<p>Aaron Williams is a professional web developer and journalist who specializes in front-end development, digital cartography and data visualization. He currently works as a news application developer at the Center for Investigative Reporting. He previously served as a web producer for the Los Angeles Times.</p>
 
 <p>Want to learn more? Visit my <a href="http://github/aboutaaron">Github</a>, follow me <a href="http://twitter.com/aboutaaron">Twitter</a>, look at my <a href="http://resume.linkedinlabs.com/z3wen348n">resume</a> or say hello — <strong>aaron</strong> [at] this domain.</p>
 
-<h3>Colophon</h3>
+<h4>Colophon</h4>
 
-<p>This site is powered by the following technologies:</p>
+<p>Aboutaaron.com is hosted on Github Pages. The design is called "Banquo" and is a fork of "Casper," the default theme for Ghost.org. Typography and page structure is inspired by Information Architects. The font is Merriweather hosted by Google Fonts. The particle system is adapted from Mr. Doob's demo on the Three.js homepage.</p>
 
-<ul>
-<li><p><a href="http://google.com/webfonts">Lora</a></p></li>
-<li><p><a href="http://jekyllrb.com/">Jekyll</a></p></li>
-<li><p><a href="http://twitter.github.com/bootstrap">Bootstrap</a></p></li>
-<li><p><a href="http://pages.github.com/">Github Pages</a></p></li>
-</ul>
+      </section>
+    </article>
+  </main>
 
-
-<h4>Design</h4>
-
-<p>For this site design, I wanted something simple, yet functional. I moved the blogging feature off to <a href="http://blog.aboutaaron.com">Tumblr</a>, gutted Bootstrap's Less files for the Sass variant and began asking myself, "What represents <em>me</em>?" What's left is a site that's easy to maintain and a breeze to update. Also, dinosuars!</p>
-
-<p>Special thanks to:</p>
-
-<ul>
-<li><p><a href="http://markdotto.com/">Mark Otto</a> - Mark built Bootstrap. This site is built with Bootstrap. Nuff said.</p></li>
-<li><p><a href="http://betaprime.tumblr.com">Beta Prime</a> - I took <a href="http://evanwalsh.net/">Evan Walsh's</a> simplistic Tumblr theme and rehauled it for <a href="http://blog.aboutaaron.com">my blog</a>. The aesthetic carried over to this site.</p></li>
-<li><p><a href="http://www.marco.org/">Marco Arment</a> - Marco's fanstastic website inspired the simple-but-focused look to my web presence.</p></li>
-<li><p><a href="http://troyericgriggs.com/">Troy Eric Griggs</a> - Troy, my fusion dance compadre, is a New York-based designer and web developer currently working for the New York Times. He's also a kick ass designer. Hire him.</p></li>
-<li><p><a href="http://gastrolito.deviantart.com/art/quot-Tyrannosaurus-rex-quot-72353695">Gastrolito</a> - He drew the dinosaur.</p></li>
-</ul>
-
-
-            </section>
-        </section>
-
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-
-        <script>
-          $(document).ready(function() {
-            // Stuff to do as soon as the DOM is ready;
-            var _gaq=[['_setAccount','UA-28341748-1'],['_trackPageview']];
-            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-            s.parentNode.insertBefore(g,s)}(document,'script'));
-          });
-        </script>
-    </body>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="/javascripts/threejs/build/three.min.js"></script>
+  <script src="/javascripts/index.js"></script>
+  <script>
+    $(document).ready(function() {
+      // Stuff to do as soon as the DOM is ready;
+      var _gaq=[['_setAccount','UA-28341748-1'],['_trackPageview']];
+      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+      g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+      s.parentNode.insertBefore(g,s)}(document,'script'));
+    });
+  </script>
+  </body>
 </html>
